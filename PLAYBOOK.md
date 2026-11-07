@@ -50,6 +50,11 @@ Goal: grow fast, pay for the Claude Max plan ($100/month) first via TikTok Creat
 ## Log
 Append one line per published video to `LOG.md`: date, ep, topic, YouTube id, TikTok status.
 
-## Open TODOs (do these at the start of the next run, then delete them here)
-- Set up the TikTok profile (TikTok Studio / profile edit): name "Chart Snack", bio "The world, one chart at a time 📊 New chart snack every day.", profile picture = https://res.cloudinary.com/lxthmsnt/image/upload/v1794034995/profile.png (inject via fetch → File → input[type=file], same trick as videos).
-- TikTok AI label: Kurai explicitly wants NO 'KI-generierter Inhalt' label on TikTok (content is code-made charts, not realistic). Do not set it on new uploads. Remove it from ep01/ep02 if TikTok Studio allows editing (pencil icon in Beiträge; scheduled ep02 may need delete + re-schedule for 19:00 without label – only if it is not yet live). YouTube: keep answering the KI question as before.
+## Notes learned
+- TikTok profile is set up (name, bio, logo). Done.
+- TikTok AI label: NOT set (Kurai's decision). Published TikToks cannot change the label afterwards (edit page has no toggle).
+- TikTok scheduling via JS: date = click the yyyy-mm-dd input, then click `span.day.valid` with the day number; time = click the hh:mm input, then in `.tiktok-timepicker-option-list` (hours, then minutes) click the CHILD element of the option (`(opt.querySelector('*')||opt).click()`), verify input values before clicking "Planen".
+- If "Weiter und veröffentlichen?" appears after "Planen", click "Abbrechen", wait ~30 s until "Keine Probleme gefunden", then "Planen" again.
+- YouTube upload dialog opens directly via https://studio.youtube.com/channel/UCxB9MReuCcVlW8DODL6L_0w/videos/upload?d=ud
+- Hook scene: make the first text visible at t=0 (appear start < 0) so the auto cover/first frame isn't dark.
+- TikTok post ids appear in the content page HTML in row order (newest-scheduled first) – useful to identify rows.
