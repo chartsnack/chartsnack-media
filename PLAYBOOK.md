@@ -48,3 +48,7 @@ Goal: grow fast, pay for the Claude Max plan ($100/month) first via TikTok Creat
 
 ## Log
 Append one line per published video to `LOG.md`: date, ep, topic, YouTube id, TikTok status.
+
+## Open TODOs (do these at the start of the next run, then delete them here)
+- Set up the TikTok profile (TikTok Studio / profile edit): name "Chart Snack", bio "The world, one chart at a time 📊 New chart snack every day.", profile picture = https://res.cloudinary.com/lxthmsnt/image/upload/v1794034995/profile.png (inject via fetch → File → input[type=file], same trick as videos).
+- AI label: Kurai prefers no TikTok AI label because the content is not realistic. TikTok's dialog says labels are required for content "fully AI-generated or significantly edited by AI" – our visuals are code-made, only the voice is synthetic. Decide per TikTok's current wording; if it only targets realistic content, leave the label off.
