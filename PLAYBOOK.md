@@ -43,7 +43,6 @@ Goal: grow fast, pay for the Claude Max plan ($100/month) first via TikTok Creat
    in the Cloudinary console tab (https://console.cloudinary.com) run JS: fetch the raw GitHub file, POST FormData(file, upload_preset, public_id) to `https://api.cloudinary.com/v1_1/lxthmsnt/video/upload` → `secure_url`.
    On https://www.tiktok.com/tiktokstudio/upload: fetch the secure_url → File → inject into `input[type=file]`.
    Caption: focus the `[contenteditable=true]`, select all, Delete, type text, then type each hashtag followed by a space.
-   "Mehr anzeigen" → "KI-generierter Inhalt" switch on (confirm "Aktivieren").
    Schedule: radio "Zeitplan" (confirm "Erlauben"), time picker `.tiktok-timepicker-option-list` (hours list, minutes list in 5-min steps), button "Planen". Or "Veröffentlichen" for now.
    Set the tab viewport to 1400x1000 while working, reset to desktop afterwards.
 4. Times (Europe/Berlin): main slot 19:00. Optional extra slots 15:00 / 23:00.
@@ -53,4 +52,4 @@ Append one line per published video to `LOG.md`: date, ep, topic, YouTube id, Ti
 
 ## Open TODOs (do these at the start of the next run, then delete them here)
 - Set up the TikTok profile (TikTok Studio / profile edit): name "Chart Snack", bio "The world, one chart at a time 📊 New chart snack every day.", profile picture = https://res.cloudinary.com/lxthmsnt/image/upload/v1794034995/profile.png (inject via fetch → File → input[type=file], same trick as videos).
-- AI label: Kurai prefers no TikTok AI label because the content is not realistic. TikTok's dialog says labels are required for content "fully AI-generated or significantly edited by AI" – our visuals are code-made, only the voice is synthetic. Decide per TikTok's current wording; if it only targets realistic content, leave the label off.
+- TikTok AI label: Kurai explicitly wants NO 'KI-generierter Inhalt' label on TikTok (content is code-made charts, not realistic). Do not set it on new uploads. Remove it from ep01/ep02 if TikTok Studio allows editing (pencil icon in Beiträge; scheduled ep02 may need delete + re-schedule for 19:00 without label – only if it is not yet live). YouTube: keep answering the KI question as before.
