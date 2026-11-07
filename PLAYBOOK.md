@@ -17,6 +17,8 @@ Goal: grow fast, pay for the Claude Max plan ($100/month) first via TikTok Creat
 - Clickbait hooks OK, but title/description must not promise things the video doesn't deliver.
 - Money/health topics OK as data, never as advice.
 - Descriptions must NOT reveal the answer. End with a "guess before the end" prompt + hashtags.
+- Hashtags: TikTok 6–8 per video (mix: 2 broad like #fyp #foryou, 2–3 format like #facts #didyouknow #learnontiktok, 2–3 topic-specific like #space #money), YouTube 5–7 incl. #shorts. Only relevant tags – no unrelated trending tags.
+- Thumbnail/cover: choose a frame from the middle with a big number on screen (not the dark first frame).
 - Each video: new topic, new research. Vary categories (numbers, money, space, geography, animals, everyday life, history).
 
 ## Tools (this repo)
