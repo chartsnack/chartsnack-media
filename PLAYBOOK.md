@@ -46,7 +46,10 @@ Goal: grow fast, pay for the Claude Max plan ($100/month) first via TikTok Creat
    Caption: focus the `[contenteditable=true]`, select all, Delete, type text, then type each hashtag followed by a space.
    Schedule: radio "Zeitplan" (confirm "Erlauben"), time picker `.tiktok-timepicker-option-list` (hours list, minutes list in 5-min steps), button "Planen". Or "Veröffentlichen" for now.
    Set the tab viewport to 1400x1000 while working, reset to desktop afterwards.
-4. Times (Europe/Berlin): main slot 19:00. Optional extra slots 15:00 / 23:00.
+4. Times (Europe/Berlin): since 2026-11-11 TWO posts per day on both platforms: 12:00 and 19:00.
+   Always continue from the last scheduled slot in LOG.md (no gaps, no double slots).
+   Cloudinary upload also works from the YouTube Studio tab (console.cloudinary.com may log out).
+   YouTube date picker only renders when the browser tab is in front (tabs_select first).
 
 ## Log
 Append one line per published video to `LOG.md`: date, ep, topic, YouTube id, TikTok status.
@@ -59,3 +62,11 @@ Append one line per published video to `LOG.md`: date, ep, topic, YouTube id, Ti
 - YouTube upload dialog opens directly via https://studio.youtube.com/channel/UCxB9MReuCcVlW8DODL6L_0w/videos/upload?d=ud
 - Hook scene: make the first text visible at t=0 (appear start < 0) so the auto cover/first frame isn't dark.
 - TikTok post ids appear in the content page HTML in row order (newest-scheduled first) – useful to identify rows.
+
+## Learnings (2026-11-09)
+- YouTube viewed-vs-swiped: ep01 seconds 55 % viewed, ep02 money 42 %, ep03 car-to-moon 9 % (dead). Big-number / money comparisons work; travel/space framing did not.
+- TikTok: 60 s versions got 0–2 views; first 25 s cut (tt04 paper) got 441 views + 3 comments in 2 h. Keep TikTok at 25 s.
+- Every new episode (from ep06): one file builds both versions: `python3 epNN.py yt` (60–65 s, out/) and `python3 epNN.py tt` (25 s, out_tt/). Template: episodes/ep06.py, uses lib.run().
+- YouTube version gets the subscribe moment: 2.5 s scene `sub_scene()` before the last big reveal, VO "Subscribe for more.", and `outro_next("<teaser of next episode>")` at the end. Description ends with "A new chart snack every day – subscribe so you don't miss the next one."
+- TikTok version: no subscribe scene, ends with "Follow for more".
+- Hook text must be fully visible at frame 0 (no fade-in on the first scene).
