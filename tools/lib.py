@@ -176,3 +176,60 @@ def stills(outdir, scenes, at):
     sheet = Image.new("RGB", (360 * len(ims), 640), BG)
     for i, im in enumerate(ims): sheet.paste(im, (360 * i, 0))
     sheet.save(os.path.join(outdir, "stills.png"))
+
+# --- subscribe hook (since ep06) ---
+RED = (255, 48, 64)
+def sub_pill(d, t, start, y=1600, dur=2.2):
+    """Animated SUBSCRIBE button: pops in at start, 'clicked' at start+0.9, gone after dur."""
+    lt = t - start
+    if lt < 0 or lt > dur: return
+    a = ease(lt / 0.25) * (1 - ease((lt - dur + 0.3) / 0.3))
+    clicked = lt > 0.9
+    sc = 1 + 0.12 * math.sin(clamp((lt - 0.85) / 0.2) * math.pi)
+    w, h = 470 * sc, 120 * sc
+    col = (70, 74, 90) if clicked else RED
+    d.rounded_rectangle([540 - w / 2, y - h / 2, 540 + w / 2, y + h / 2], radius=int(h / 2), fill=mix(col, a))
+    d.text((540, y), "SUBSCRIBED" if clicked else "SUBSCRIBE", font=F(int(52 * sc)), fill=mix(WHITE, a), anchor="mm")
+    if 0.6 < lt < 1.1:  # little cursor tap
+        cx, cy = 540 + 150, y + 40
+        r = 28 + 10 * (lt - 0.6)
+        d.ellipse([cx - r, cy - r, cx + r, cy + r], outline=mix(WHITE, a), width=5)
+
+def outro_next(teaser):
+    def fn(t, D):
+        im = Image.new("RGB", (W, H), BG)
+        d = ImageDraw.Draw(im)
+        s = 0.42
+        logo(d, 540 - 400 * s, 470, s, appear(t, 0, 0.5), grow=ease((t - 0.1) / 0.6), radius=10)
+        text(d, (540, 820), "NEXT SNACK:", 44, GREY, appear(t, 0.5))
+        text(d, (540, 920), teaser, 58, Y1, appear(t, 0.8))
+        text(d, (540, 1100), "New chart every day.", 46, WHITE, appear(t, 1.2), bold=False)
+        sub_pill(d, t, 1.4, y=1320, dur=10)
+        return im
+    return fn
+
+def sub_scene(line1="Quick:"):
+    def fn(t, D):
+        im, d = frame_base()
+        text(d, (540, 760), line1, 80, WHITE, appear(t, 0))
+        text(d, (540, 870), "new chart every day", 52, GREY, appear(t, 0.15), bold=False)
+        sub_pill(d, t, 0.2, y=1080, dur=D)
+        return im
+    return fn
+
+def hfmt(m):
+    if m < 10: return f"{m:.2f} m"
+    if m < 1000: return f"{fmt(m)} m"
+    if m < 10000: return f"{m/1000:.2f} km"
+    return f"{fmt(m/1000)} km"
+
+def run(out, final, YT, TT, stills_at_yt, stills_at_tt):
+    """argv: [yt|tt] [stills|<only>...]"""
+    mode = sys.argv[1] if len(sys.argv) > 1 else "yt"
+    rest = sys.argv[2:]
+    cfg = YT if mode == "yt" else TT
+    o = out + ("/out" if mode == "yt" else "/out_tt")
+    if rest == ["stills"]:
+        stills(o, cfg[0], stills_at_yt if mode == "yt" else stills_at_tt)
+    else:
+        build(o, *cfg, final.replace(".mp4", "" if mode == "yt" else "_tt") + ".mp4", only=rest or None)
