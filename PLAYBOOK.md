@@ -10,7 +10,8 @@ Goal: grow fast, pay for the Claude Max plan ($100/month) first via TikTok Creat
 - Kurai gave full permission to upload, schedule and publish, and to change anything on both channels.
 
 ## Format
-- Animated data shorts, 1080x1920, 30 fps, 60–70 s (TikTok pays only for videos > 1 min).
+- Animated data shorts, 1080x1920, 30 fps. YouTube: 60–70 s.
+- TikTok (since 2026-11-09, test): separate 25–35 s cut per episode (template tools/tt/tt04.py, tt05.py: hook text visible at frame 0, 3–4 fast steps, payoff + "Follow for more"). Reason: avg watch time on TikTok was ~2 s with 0–2 views; the account first needs reach and retention, Creator Rewards (>1 min) comes later. Re-evaluate once TikTok views take off.
 - Strong hook in the first 2 s ("X = Y. So how long/big is Z?"), counters, bars, timelines, reveal, recap, outro "Follow Chart Snack".
 - English AI voiceover (Kokoro, voice am_michael, speed 1.1) + self-generated music/SFX (no licensed music).
 - Facts must be correct (check numbers; prefer pure math or stable, well-known figures). No sources needed in the description.
