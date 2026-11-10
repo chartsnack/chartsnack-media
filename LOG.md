@@ -16,8 +16,9 @@
 | 2026-11-14 | 12 | Lottery odds 1 ticket/week (money/odds) | qbVlOZYZpgE (sched. 14.11 12:00) | sched. 14.11 12:00 (tt12, 25 s) |
 | 2026-11-14 | 13 | All 8.2B people packed together (big numbers) | zzNwmsc6P9Y (sched. 14.11 19:00) | sched. 14.11 19:00 (tt13, 25 s) |
 | 2026-11-15 | 14 | Weight of $1M/$1B/$1T in cash (money) | hjQf5z_WnTw (sched. 15.11 12:00) | sched. 15.11 12:00 (tt14, 25 s) |
+| 2026-11-15 | 15 | Rice on a chessboard (big numbers) | bUVWmrDyMtE (sched. 15.11 19:00) | sched. 15.11 19:00 (tt15, 25 s) |
 
-Next free slot: 2026-11-15 19:00 (then 2/day: 12:00 + 19:00).
+Next free slot: 2026-11-16 12:00 (then 2/day: 12:00 + 19:00).
 
 ## Weekly review (2026-11-10)
 - YouTube 28 d: 2,848 views, 45 % viewed vs 55 % swiped, +3 subs (3 total). Best: 1B seconds 1,335 / $1,000-a-day 1,213; heart 470 views in first 3 h (36 % avg viewed); paper 125, car-to-moon ~230.
