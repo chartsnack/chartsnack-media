@@ -10,5 +10,11 @@
 | 2026-11-11 | 06 | $1B/$1T stacked in $100 bills (money) | sched. 11.11 12:00 | sched. 11.11 12:00 (tt06, 25 s) |
 | 2026-11-11 | 07 | $15/hour until $1B (money) | sched. 11.11 19:00 | sched. 11.11 19:00 (tt07, 25 s) |
 | 2026-11-12 | 08 | 117B humans ever lived (big numbers) | sched. 12.11 12:00 | sched. 12.11 12:00 (tt08, 25 s) |
+| 2026-11-12 | 09 | 52! deck shuffles (big numbers) | SNMU4t7eRfY (sched. 12.11 19:00) | sched. 12.11 19:00 (tt09, 25 s) |
 
-Next free slot: 2026-11-12 19:00 (then 2/day: 12:00 + 19:00).
+Next free slot: 2026-11-13 12:00 (then 2/day: 12:00 + 19:00).
+
+## Weekly review (2026-11-10)
+- YouTube 28 d: 2,848 views, 45 % viewed vs 55 % swiped, +3 subs (3 total). Best: 1B seconds 1,335 / $1,000-a-day 1,213; heart 470 views in first 3 h (36 % avg viewed); paper 125, car-to-moon ~230.
+- TikTok: 25 s cuts work – paper 1,080 views / 6 likes / 4 comments, heart 236 views; old 60 s uploads 0–2 views.
+- Plan: keep big-number + money comparisons as ~3/4 of topics, 25 s TikTok cuts; tests this week: geography scale, everyday life (sleep), history timeline.
