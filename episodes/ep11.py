@@ -57,7 +57,7 @@ s5 = recap("Earth as a basketball:", [("EVEREST", "0.17 mm", Y1), ("SPACE", "1.9
 
 YT = ([("s1", s1, 4.5), ("s2", s2, 12.0), ("s3", s3, 13.0), ("sx", sub_scene(), 2.5), ("s4", s4, 14.0), ("s5", s5, 9.0),
        ("s6", outro_next("Your real lottery odds"), 5.0)],
-      [(0, 4.5, 0.15, "Shrink planet Earth to the size of a basketball. How tall is Mount Everest?"),
+      [(0, 4.5, 0.15, "Shrink Earth to a basketball. How tall is Mount Everest?"),
        (4.5, 12, 0.5, "Zero point one seven millimetres. The deepest ocean trench: zero point two one. Less than two sheets of paper."),
        (16.5, 13, 0.5, "Now go up. Space begins just two millimetres above the ball. The space station orbits less than one centimetre up."),
        (29.5, 2.5, 0.1, "Subscribe for more."),
@@ -67,7 +67,7 @@ YT = ([("s1", s1, 4.5), ("s2", s2, 12.0), ("s3", s3, 13.0), ("sx", sub_scene(), 
       [(5.0, 13.8), (17.0, 26.8), (32.5, 43.6)],
       [0.2, 14.0, 27.0, 29.7, 43.6, 46.9, 48.1, 49.3, 55.4])
 TT = ([("s1", s1, 3.0), ("s2", s2, 5.0), ("s3", s3, 6.0), ("s4", s4, 6.0), ("s5", s5, 5.0)],
-      [(0, 3, 0.05, "Earth as a basketball. How tall is Everest?"),
+      [(0, 3, 0.05, "Earth is a basketball. How tall is Everest?"),
        (3, 5, 0.2, "Zero point one seven millimetres."),
        (8, 6, 0.2, "Space starts just two millimetres up."),
        (14, 6, 0.2, "The Moon: a tennis ball, seven metres away."),
