@@ -52,7 +52,7 @@ s5 = recap("Your doubling penny:", [("DAY 10", "$5.12", Y1), ("DAY 20", "$5,243"
 
 YT = ([("s1", s1, 4.5), ("s2", s2, 12.0), ("s3", s3, 13.0), ("sx", sub_scene(), 2.5), ("s4", s4, 14.0), ("s5", s5, 9.0),
        ("s6", outro_next("Earth shrunk to a basketball"), 5.0)],
-      [(0, 4.5, 0.15, "One million dollars right now, or one penny that doubles every day for thirty days?"),
+      [(0, 4.5, 0.15, "A million dollars now, or a penny that doubles daily for thirty days?"),
        (4.5, 12, 0.5, "Day two, two cents. Day ten, five dollars. Even on day twenty, you only have about five thousand dollars. Bad deal, right?"),
        (16.5, 13, 0.5, "But keep doubling. Day twenty five, about a hundred seventy thousand. And on day twenty eight, it passes one million."),
        (29.5, 2.5, 0.1, "Subscribe for more."),
