@@ -19,8 +19,10 @@
 | 2026-11-15 | 15 | Rice on a chessboard (big numbers) | bUVWmrDyMtE (sched. 15.11 19:00) | sched. 15.11 19:00 (tt15, 25 s) |
 | 2026-11-16 | 16 | Years spent sleeping (test: everyday life) | G6nqCFuJT6A (sched. 16.11 12:00) | sched. 16.11 12:00 (tt16, 25 s) |
 | 2026-11-16 | 17 | $1B/$1T split among everyone (money) | qDQpaJ1hQTA (sched. 16.11 19:00) | sched. 16.11 19:00 (tt17, 25 s) |
+| 2026-11-17 | 18 | Secret doubling every 10 min (big numbers) | NOT UPLOADED – YouTube daily upload limit (retry 11.11 22:20) | sched. 17.11 12:00 (tt18, 25 s) |
+| 2026-11-17 | 19 | Cleopatra/pyramids/Moon timeline (test: history) | NOT UPLOADED – YouTube daily upload limit (retry 11.11 22:20) | sched. 17.11 19:00 (tt19, 25 s) |
 
-Next free slot: 2026-11-17 12:00 (then 2/day: 12:00 + 19:00).
+Next free slot: 2026-11-18 12:00 (then 2/day: 12:00 + 19:00). Open: YouTube ep18 (17.11 12:00) + ep19 (17.11 19:00) still to upload.
 
 ## Weekly review (2026-11-10)
 - YouTube 28 d: 2,848 views, 45 % viewed vs 55 % swiped, +3 subs (3 total). Best: 1B seconds 1,335 / $1,000-a-day 1,213; heart 470 views in first 3 h (36 % avg viewed); paper 125, car-to-moon ~230.

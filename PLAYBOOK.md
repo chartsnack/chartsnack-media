@@ -70,3 +70,15 @@ Append one line per published video to `LOG.md`: date, ep, topic, YouTube id, Ti
 - YouTube version gets the subscribe moment: 2.5 s scene `sub_scene()` before the last big reveal, VO "Subscribe for more.", and `outro_next("<teaser of next episode>")` at the end. Description ends with "A new chart snack every day – subscribe so you don't miss the next one."
 - TikTok version: no subscribe scene, ends with "Follow for more".
 - Hook text must be fully visible at frame 0 (no fade-in on the first scene).
+
+## Learnings (2026-11-10, weekly run)
+- YouTube has a DAILY UPLOAD LIMIT for unverified channels: after ~10 uploads in one day the dialog shows "Tägliches Upload-Limit erreicht" (done button disabled). Spread uploads: max ~9 per night, or Kurai verifies identity (Studio → Überprüfung starten, phone) to raise it. Failed/abandoned upload attempts count too.
+- If the Claude desktop window is minimized/the Browser pane hidden, requestAnimationFrame never fires: YouTube's upload dialog stays width 0, TikTok's time picker updates very late. Fix: run this in the tab before opening dialogs:
+  `window.requestAnimationFrame = cb => setTimeout(()=>cb(performance.now()),16); window.cancelAnimationFrame = id => clearTimeout(id);`
+  On YouTube load /videos/short (no ?d=ud), patch, then open the dialog in-page (click ytcp-button "Erstellen" → item "Videos hochladen"). Keep the same page for all uploads (close success dialog with ytcp-button#close-button).
+- Browser pane tabs need a size: if innerWidth is 0, call resize_window (e.g. 1280x900) on that tab.
+- YouTube text: focus #textbox, getSelection().selectAllChildren(el), document.execCommand('insertText', false, text). Close hashtag suggestion popups: ytcp-social-suggestions-dropdown tp-yt-paper-dialog .close().
+- YouTube date without calendar: open #datepicker-trigger, set the dd.mm.yyyy input + its tp-yt-paper-input .value, then dpkr=document.querySelector('ytcp-date-picker'); dpkr.onDateTextChange({target:paperInput, detail:{value}}); dpkr.onFormSubmit(new Event('submit')). Time: focus+select the time input in ytcp-datetime-picker via JS, then computer "type" "19:00" + Return. Verify both before #done-button.
+- TikTok: typing emojis with the computer "type" action crashes the editor ("Es ist etwas schiefgelaufen"). Insert caption text+emoji with execCommand('insertText'), then type hashtags one by one with the computer tool.
+- TikTok "Weiter und veröffentlichen?" dialog with "Jetzt veröffentlichen": never click that (would publish now). If the check hangs on "Überprüfung läuft" for >10 min, reload the upload page and re-inject the same Cloudinary file – the check then passes instantly.
+- tools/scenes.py: reusable scene builders (hook, bars_scene, recap, statement) used by ep09+ to build episodes faster.
