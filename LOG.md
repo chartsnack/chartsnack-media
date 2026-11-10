@@ -28,3 +28,16 @@ Next free slot: 2026-11-18 12:00 (then 2/day: 12:00 + 19:00). Open: YouTube ep18
 - YouTube 28 d: 2,848 views, 45 % viewed vs 55 % swiped, +3 subs (3 total). Best: 1B seconds 1,335 / $1,000-a-day 1,213; heart 470 views in first 3 h (36 % avg viewed); paper 125, car-to-moon ~230.
 - TikTok: 25 s cuts work – paper 1,080 views / 6 likes / 4 comments, heart 236 views; old 60 s uploads 0–2 views.
 - Plan: keep big-number + money comparisons as ~3/4 of topics, 25 s TikTok cuts; tests this week: geography scale, everyday life (sleep), history timeline.
+
+## German TikTok (Chart Snack DE) – since 2026-11-10
+Account created by Kurai; runs in Kurai's Chrome (Claude in Chrome). Handle: TBD (Kurai to send). Login pending: TikTok asks for e-mail verification on web login – Kurai must log in once at the PC.
+| Date | DE | Topic | TikTok DE |
+|---|---|---|---|
+| (12.11 19:00 planned) | de01 | Cent verdoppeln | ready in queue/de01.mp4 – not uploaded (login pending) |
+| (13.11 19:00 planned) | de02 | Karten mischen 52! | ready queue/de02.mp4 |
+| (14.11 19:00 planned) | de03 | Lotto 6 aus 49 | ready queue/de03.mp4 |
+| (15.11 19:00 planned) | de04 | Reis auf dem Schachbrett | ready queue/de04.mp4 |
+| (16.11 19:00 planned) | de05 | Geheimnis verdoppelt sich | ready queue/de05.mp4 |
+| (17.11 19:00 planned) | de06 | Jahre im Schlaf | ready queue/de06.mp4 |
+
+Next free slot DE: 2026-11-18 12:00 (then 2/day: 12:00 + 19:00, same as English).

@@ -9,6 +9,18 @@ Goal: grow fast, pay for the Claude Max plan ($100/month) first via TikTok Creat
 - Both are logged in inside the Claude desktop app's built-in browser on Kurai's PC "timo". Use the built-in browser tools.
 - Kurai gave full permission to upload, schedule and publish, and to change anything on both channels.
 
+## German channel (since 2026-11-10)
+- TikTok "Chart Snack DE" (handle: see LOG.md), logged in inside Kurai's Chrome → use the Claude in Chrome tools (mcp__claude-in-chrome__*), NOT the built-in browser (TikTok web has no account switching; the built-in browser stays on @chartsnack).
+- Same upload pipeline as TikTok EN (Cloudinary URL → inject into input[type=file], caption via execCommand, hashtags typed, schedule). Chrome must be open on the PC.
+- German cut per episode: episodes/de/deNN.py (template de01.py), 25 s, German on-screen text (German number format 1.000 / 0,5 via scenes.fmt when DE), German VO with numbers written out as words, ends "Folge für mehr". Build: `python3 episodes/de/deNN.py de` → out_de/, queue/deNN.mp4.
+
+## Voices
+- English: Kokoro am_michael (speed 1.1). German: Piper "de_DE-thorsten-high" (CC0, commercial use OK) via `pip install piper-tts`; models come from GitHub (HuggingFace is blocked in the sandbox):
+  `mkdir -p /home/claude/tts/piper && cd /home/claude/tts/piper && curl -sL https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-de_DE-thorsten-high.tar.bz2 | tar xj`
+  (also available: thorsten_emotional-medium with speaker ids e.g. #6 surprised, kerstin-low (CC0). Do NOT use pavoque (NC) or XTTS/F5 (non-commercial).)
+- lib.VOICE selects the engine ("kokoro:<voice>" or "piper:<model>[#speaker]"); `run()` mode "de" switches to Thorsten automatically.
+- All voiceovers go through lib.VO_FX (highpass, EQ presence, compressor) before the mix – clearer on phone speakers.
+
 ## Format
 - Animated data shorts, 1080x1920, 30 fps. YouTube: 60–70 s.
 - TikTok (since 2026-11-09, test): separate 25–35 s cut per episode (template tools/tt/tt04.py, tt05.py: hook text visible at frame 0, 3–4 fast steps, payoff + "Follow for more"). Reason: avg watch time on TikTok was ~2 s with 0–2 views; the account first needs reach and retention, Creator Rewards (>1 min) comes later. Re-evaluate once TikTok views take off.
