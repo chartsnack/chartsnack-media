@@ -134,20 +134,49 @@ def music(path, dur, scene_starts, ticks, dings, beat_from=5.0, seed=7, bpm=100)
     out = out / np.max(np.abs(out)) * 0.707
     wavfile.write(path, SR, (np.stack([out, out], 1) * 32767).astype(np.int16))
 
-def voiceover(path, dur, lines, voice="am_michael", speed=1.1):
+VOICE = "kokoro:am_michael"   # or "piper:de_DE-thorsten-high" (German, CC0) – see PLAYBOOK "Voices"
+PIPER_DIR = "/home/claude/tts/piper"
+_tts = {}
+
+def _synth(txt, voice, speed):
+    """returns (float32 mono array, sample_rate)"""
+    eng, name = voice.split(":", 1)
+    if eng == "kokoro":
+        from kokoro_onnx import Kokoro
+        if "k" not in _tts: _tts["k"] = Kokoro("/home/claude/tts/kokoro-v1.0.onnx", "/home/claude/tts/voices-v1.0.bin")
+        return _tts["k"].create(txt, voice=name, speed=speed, lang="en-gb" if name[0] == "b" else "en-us")
+    if eng == "piper":
+        import glob, io, wave
+        from piper import PiperVoice, SynthesisConfig
+        base, _, sid = name.partition("#")
+        if base not in _tts: _tts[base] = PiperVoice.load(glob.glob(f"{PIPER_DIR}/vits-piper-{base}/*.onnx")[0])
+        v = _tts[base]; buf = io.BytesIO()
+        with wave.open(buf, "wb") as w:
+            v.synthesize_wav(txt, w, syn_config=SynthesisConfig(speaker_id=int(sid) if sid else None, length_scale=1.0 / speed))
+        buf.seek(0)
+        with wave.open(buf) as w:
+            a = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
+            return a, w.getframerate()
+    raise ValueError(voice)
+
+def voiceover(path, dur, lines, voice=None, speed=1.1):
     """lines: (scene_start, scene_len, offset, text). Prints fit report; returns False if any line is too long."""
     import soundfile as sf
-    from kokoro_onnx import Kokoro
-    k = Kokoro("/home/claude/tts/kokoro-v1.0.onnx", "/home/claude/tts/voices-v1.0.bin")
+    voice = voice or VOICE
     vsr = 24000; track = np.zeros(int(dur * vsr)); ok = True
     for st, ln, off, txt in lines:
-        a, sr = k.create(txt, voice=voice, speed=speed, lang="en-us")
-        dd = len(a) / sr; room = ln - off - 0.2
+        a, sr = _synth(txt, voice, speed)
+        if sr != vsr:
+            a = np.interp(np.arange(0, len(a), sr / vsr), np.arange(len(a)), a)
+        dd = len(a) / vsr; room = ln - off - 0.2
         print(f"{st:>5}s  {dd:5.2f}s / {room:5.2f}s  {'OK' if dd <= room else 'TOO LONG'}")
         ok &= dd <= room
         i = int((st + off) * vsr); track[i:i + len(a)] += a[: len(track) - i]
     sf.write(path, track, vsr)
     return ok
+
+# voice "mastering" (since 2026-11-10): remove rumble, tame peaks, add presence -> clearer on phone speakers
+VO_FX = "highpass=f=90,equalizer=f=250:t=q:w=1:g=-2,equalizer=f=3500:t=q:w=1.2:g=3,acompressor=threshold=-20dB:ratio=3:attack=5:release=80:makeup=2"
 
 def build(outdir, scenes, lines, ticks, dings, final_name, only=None):
     os.makedirs(outdir, exist_ok=True)
@@ -164,7 +193,7 @@ def build(outdir, scenes, lines, ticks, dings, final_name, only=None):
     music(os.path.join(outdir, "music.wav"), dur, starts, ticks, dings)
     if not voiceover(os.path.join(outdir, "vo.wav"), dur, lines): print("WARNING: a voice line is too long")
     run("-i", "video.mp4", "-i", "music.wav", "-i", "vo.wav", "-filter_complex",
-        "[1:a]volume=0.35[m];[2:a]aresample=44100,pan=stereo|c0=c0|c1=c0,volume=1.6[v];[m][v]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=9[a]",
+        "[1:a]volume=0.35[m];[2:a]aresample=44100,"+VO_FX+",pan=stereo|c0=c0|c1=c0,volume=1.6[v];[m][v]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=9[a]",
         "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", final_name)
     print("final", os.path.join(outdir, final_name), "starts", starts)
 
@@ -223,13 +252,15 @@ def hfmt(m):
     if m < 10000: return f"{m/1000:.2f} km"
     return f"{fmt(m/1000)} km"
 
-def run(out, final, YT, TT, stills_at_yt, stills_at_tt):
-    """argv: [yt|tt] [stills|<only>...]"""
+def run(out, final, YT, TT, stills_at_yt, stills_at_tt, DE=None, stills_at_de=None):
+    """argv: [yt|tt|de] [stills|<only>...]   de = German TikTok cut (piper voice)"""
+    global VOICE
     mode = sys.argv[1] if len(sys.argv) > 1 else "yt"
     rest = sys.argv[2:]
-    cfg = YT if mode == "yt" else TT
-    o = out + ("/out" if mode == "yt" else "/out_tt")
+    cfg = {"yt": YT, "tt": TT, "de": DE}[mode]
+    o = out + {"yt": "/out", "tt": "/out_tt", "de": "/out_de"}[mode]
+    if mode == "de": VOICE = "piper:de_DE-thorsten-high"
     if rest == ["stills"]:
-        stills(o, cfg[0], stills_at_yt if mode == "yt" else stills_at_tt)
+        stills(o, cfg[0], {"yt": stills_at_yt, "tt": stills_at_tt, "de": stills_at_de or stills_at_tt}[mode])
     else:
-        build(o, *cfg, final.replace(".mp4", "" if mode == "yt" else "_tt") + ".mp4", only=rest or None)
+        build(o, *cfg, final.replace(".mp4", {"yt": "", "tt": "_tt", "de": "_de"}[mode]) + ".mp4", only=rest or None)
