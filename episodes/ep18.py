@@ -55,7 +55,7 @@ s5 = recap("A doubling secret:", [("AFTER 2 HOURS", "4,096", Y1), ("AFTER 4 HOUR
 
 YT = ([("s1", s1, 4.5), ("s2", s2, 12.0), ("s3", s3, 13.0), ("sx", sub_scene(), 2.5), ("s4", s4, 14.0), ("s5", s5, 9.0),
        ("s6", outro_next("Cleopatra vs the Moon landing"), 5.0)],
-      [(0, 4.5, 0.15, "Tell one person a secret. If it doubles every ten minutes, when does the world know?"),
+      [(0, 4.5, 0.15, "A secret that doubles every ten minutes. When does the whole world know?"),
        (4.5, 12, 0.5, "Every ten minutes, everyone who knows tells one new person. After two hours, four thousand ninety six people. A small town."),
        (16.5, 13, 0.5, "After four hours, almost seventeen million. And yet that's still only about zero point two percent of the world."),
        (29.5, 2.5, 0.1, "Subscribe for more."),
