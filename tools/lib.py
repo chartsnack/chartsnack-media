@@ -134,8 +134,10 @@ def music(path, dur, scene_starts, ticks, dings, beat_from=5.0, seed=7, bpm=100)
     out = out / np.max(np.abs(out)) * 0.707
     wavfile.write(path, SR, (np.stack([out, out], 1) * 32767).astype(np.int16))
 
+VOICE_SPEED = 1.1
 VOICE = "kokoro:am_michael"   # or "piper:de_DE-thorsten-high" (German, CC0) – see PLAYBOOK "Voices"
 PIPER_DIR = "/home/claude/tts/piper"
+PIPER_NOISE = (0.75, 0.9)  # noise_scale, noise_w_scale: a bit more lively than default (0.667, 0.8)
 _tts = {}
 
 def _synth(txt, voice, speed):
@@ -152,17 +154,18 @@ def _synth(txt, voice, speed):
         if base not in _tts: _tts[base] = PiperVoice.load(glob.glob(f"{PIPER_DIR}/vits-piper-{base}/*.onnx")[0])
         v = _tts[base]; buf = io.BytesIO()
         with wave.open(buf, "wb") as w:
-            v.synthesize_wav(txt, w, syn_config=SynthesisConfig(speaker_id=int(sid) if sid else None, length_scale=1.0 / speed))
+            v.synthesize_wav(txt, w, syn_config=SynthesisConfig(speaker_id=int(sid) if sid else None, length_scale=1.0 / speed, noise_scale=PIPER_NOISE[0], noise_w_scale=PIPER_NOISE[1]))
         buf.seek(0)
         with wave.open(buf) as w:
             a = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
             return a, w.getframerate()
     raise ValueError(voice)
 
-def voiceover(path, dur, lines, voice=None, speed=1.1):
+def voiceover(path, dur, lines, voice=None, speed=None):
     """lines: (scene_start, scene_len, offset, text). Prints fit report; returns False if any line is too long."""
     import soundfile as sf
     voice = voice or VOICE
+    speed = speed or VOICE_SPEED
     vsr = 24000; track = np.zeros(int(dur * vsr)); ok = True
     for st, ln, off, txt in lines:
         a, sr = _synth(txt, voice, speed)
@@ -259,7 +262,8 @@ def run(out, final, YT, TT, stills_at_yt, stills_at_tt, DE=None, stills_at_de=No
     rest = sys.argv[2:]
     cfg = {"yt": YT, "tt": TT, "de": DE}[mode]
     o = out + {"yt": "/out", "tt": "/out_tt", "de": "/out_de"}[mode]
-    if mode == "de": VOICE = "piper:de_DE-thorsten-high"
+    if mode == "de":
+        import lib as _l; _l.VOICE = "piper:de_DE-thorsten-high"; _l.VOICE_SPEED = 1.0
     if rest == ["stills"]:
         stills(o, cfg[0], {"yt": stills_at_yt, "tt": stills_at_tt, "de": stills_at_de or stills_at_tt}[mode])
     else:

@@ -47,14 +47,14 @@ s3 = day_scene(20, 28, 1.5e6, Y2, "Tag 28: 1,34 Millionen.", "Die Million ist ge
 s4 = day_scene(28, 30, val(30), Y3, "Tag 30: 5.368.709 €.", "Über 5-mal die Million.", line=(1e6, "1 MILLION €"))
 s5 = recap("Dein verdoppelter Cent:", [("TAG 10", "5,12 €", Y1), ("TAG 20", "5.243 €", Y2), ("TAG 30", "5,37 Mio. €", Y3)])
 
-DECUT = ([("s1", s1, 3.0), ("s2", s2, 5.0), ("s3", s3, 6.0), ("s4", s4, 6.0), ("s5", s5, 5.0)],
-         [(0, 3, 0.05, "Eine Million oder ein Cent, der sich verdoppelt?"),
-          (3, 5, 0.2, "Tag zwanzig: nur fünftausend Euro."),
-          (8, 6, 0.2, "Tag achtundzwanzig: über eine Million."),
-          (14, 6, 0.2, "Tag dreißig: fünf Komma vier Millionen."),
-          (20, 5, 0.2, "Folge für mehr.")],
-         [(3.5, 7.0), (8.5, 12.0), (14.5, 18.0)],
-         [0.1, 5.6, 11.6, 17.6, 20.4])
+DECUT = ([("s1", s1, 5.0), ("s2", s2, 11.0), ("s3", s3, 10.0), ("s4", s4, 10.0), ("s5", s5, 9.0)],
+         [(0, 5, 0.1, "Eine Million sofort, oder ein Cent, der sich jeden Tag verdoppelt?"),
+          (5, 11, 0.4, "Tag eins: ein Cent. Tag zwei: zwei Cent. Tag zehn: gerade mal fünf Euro. Und selbst an Tag zwanzig hast du nur rund fünftausend Euro."),
+          (16, 10, 0.4, "Aber verdoppeln heißt: Jeden Tag kommt genau so viel dazu, wie du schon hast. Und an Tag achtundzwanzig knackst du die Million."),
+          (26, 10, 0.4, "Noch zwei Verdopplungen. An Tag dreißig hast du über fünf Komma drei Millionen Euro. Mehr als fünfmal so viel wie die Million."),
+          (36, 9, 0.4, "Die Hälfte davon kommt erst am allerletzten Tag. Das ist exponentielles Wachstum. Folge für mehr.")],
+         [(5.5, 14.0), (16.5, 24.0), (26.5, 33.0)],
+         [0.2, 13.6, 23.6, 33.6, 36.4, 37.6, 38.8])
 
 if __name__ == "__main__":
-    run("/home/claude/chartsnack/de01", "chartsnack_de01_cent.mp4", None, None, None, None, DECUT, [0.0, 4.8, 5.8, 5.8, 4.8])
+    run("/home/claude/chartsnack/de01", "chartsnack_de01_cent.mp4", None, None, None, None, DECUT, [0.0, 10.5, 9.5, 9.5, 8.5])

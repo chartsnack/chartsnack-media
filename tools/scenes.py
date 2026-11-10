@@ -62,7 +62,7 @@ def recap(title, rows, follow_y=1500, size=72):
             text(d, (90, y), lab, 44, c, a, anchor="lm")
             text(d, (900, y + 75), val, size, WHITE, a, anchor="rm")
             y += 250
-        if D < 6: text(d, (540, follow_y), T("Follow for more", "Folge für mehr"), 48, Y1, appear(t, min(3.4, D - 1.6)))
+        if D < 6 or DE: text(d, (540, follow_y), T("Follow for more", "Folge für mehr"), 48, Y1, appear(t, min(3.4, D - 1.6)))
         return im
     return fn
 
@@ -72,7 +72,7 @@ def statement(lines, follow_y=1350):
         im, d = frame_base()
         for (y, s, size, col, bold, st) in lines:
             text(d, (540, y), s, size, col, appear(t, st), bold=bold)
-        if D < 6: text(d, (540, follow_y), T("Follow for more", "Folge für mehr"), 48, Y1, appear(t, min(2.6, D - 1.6)))
+        if D < 6 or DE: text(d, (540, follow_y), T("Follow for more", "Folge für mehr"), 48, Y1, appear(t, min(2.6, D - 1.6)))
         return im
     return fn
 
