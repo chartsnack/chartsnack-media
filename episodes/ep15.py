@@ -66,7 +66,7 @@ s5 = recap("Doubling rice:", [("SQUARE 32", "2.1 billion", Y1), ("SQUARE 64", "9
 
 YT = ([("s1", s1, 4.5), ("s2", s2, 12.0), ("s3", s3, 13.0), ("sx", sub_scene(), 2.5), ("s4", s4, 14.0), ("s5", s5, 9.0),
        ("s6", outro_next("How many years you sleep"), 5.0)],
-      [(0, 4.5, 0.15, "One grain of rice. Double it on every square. How much on square sixty four?"),
+      [(0, 4.5, 0.15, "One rice grain, doubled every square. How much on the last one?"),
        (4.5, 12, 0.5, "Square two: two grains. Square ten: five hundred twelve. By square thirty two, the middle of the board, two point one billion grains."),
        (16.5, 13, 0.5, "And it keeps doubling. Square sixty four alone holds nine point two quintillion grains."),
        (29.5, 2.5, 0.1, "Subscribe for more."),
