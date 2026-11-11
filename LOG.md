@@ -30,7 +30,7 @@ Next free slot: 2026-11-18 12:00 (then 2/day: 12:00 + 19:00). Open: YouTube ep18
 - Plan: keep big-number + money comparisons as ~3/4 of topics, 25 s TikTok cuts; tests this week: geography scale, everyday life (sleep), history timeline.
 
 ## German TikTok (Chart Snack DE) – since 2026-11-10
-Account created by Kurai; runs in Kurai's Chrome (Claude in Chrome). Handle: TBD (Kurai to send). Login pending: TikTok asks for e-mail verification on web login – Kurai must log in once at the PC.
+Account created by Kurai; runs in Kurai's Chrome (Claude in Chrome). Handle: @chartsnackde (display name ChartSnackDE, can be renamed from 17.11). Logged in in Chrome since 2026-11-11. Bio + logo set.
 | Date | DE | Topic | TikTok DE |
 |---|---|---|---|
 | (12.11 19:00 planned) | de01 | Cent verdoppeln | ready in queue/de01.mp4 – not uploaded (login pending) |

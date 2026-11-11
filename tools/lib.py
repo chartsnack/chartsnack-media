@@ -135,6 +135,7 @@ def music(path, dur, scene_starts, ticks, dings, beat_from=5.0, seed=7, bpm=100)
     wavfile.write(path, SR, (np.stack([out, out], 1) * 32767).astype(np.int16))
 
 VOICE_SPEED = 1.1
+DE_VOICE, DE_SPEED = "chatterbox:de", 1.12   # German voice (needs huggingface.co allowed); fallback "piper:de_DE-thorsten-high", 1.0
 VOICE = "kokoro:am_michael"   # or "piper:de_DE-thorsten-high" (German, CC0) – see PLAYBOOK "Voices"
 PIPER_DIR = "/home/claude/tts/piper"
 PIPER_NOISE = (0.75, 0.9)  # noise_scale, noise_w_scale: a bit more lively than default (0.667, 0.8)
@@ -159,6 +160,30 @@ def _synth(txt, voice, speed):
         with wave.open(buf) as w:
             a = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
             return a, w.getframerate()
+    if eng == "chatterbox":
+        # "chatterbox:de" (default voice) | "chatterbox:de:lively" | "chatterbox:de:/path/ref.wav" (voice clone)
+        import os, torch
+        os.environ.setdefault("TQDM_DISABLE", "1"); torch.set_num_threads(2)
+        from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+        if "cb" not in _tts: _tts["cb"] = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
+        lang, _, var = name.partition(":")
+        kw = dict(exaggeration=0.5, cfg_weight=0.5)
+        if var == "lively": kw = dict(exaggeration=0.8, cfg_weight=0.3)
+        elif var: kw = dict(audio_prompt_path=var, exaggeration=0.6, cfg_weight=0.4)
+        import re
+        parts = [x.strip() for x in re.split(r"(?<=[.!?])\s+", txt) if x.strip()]  # sentence by sentence: avoids cut-off endings
+        sr0 = _tts["cb"].sr; chunks = []
+        for x in parts:
+            chunks.append(_tts["cb"].generate(x, language_id=lang, **kw).squeeze(0).numpy().astype(np.float32))
+            chunks.append(np.zeros(int(0.22 * sr0), np.float32))
+        a = np.concatenate(chunks[:-1])
+        if speed and abs(speed - 1.0) > 0.01:  # time-stretch without pitch change
+            import subprocess, tempfile, soundfile as sf
+            with tempfile.TemporaryDirectory() as td:
+                sf.write(td + "/i.wav", a, _tts["cb"].sr)
+                subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", td + "/i.wav", "-af", f"atempo={speed}", td + "/o.wav"], check=True)
+                a, _ = sf.read(td + "/o.wav", dtype="float32")
+        return a, _tts["cb"].sr
     raise ValueError(voice)
 
 def voiceover(path, dur, lines, voice=None, speed=None):
@@ -263,7 +288,7 @@ def run(out, final, YT, TT, stills_at_yt, stills_at_tt, DE=None, stills_at_de=No
     cfg = {"yt": YT, "tt": TT, "de": DE}[mode]
     o = out + {"yt": "/out", "tt": "/out_tt", "de": "/out_de"}[mode]
     if mode == "de":
-        import lib as _l; _l.VOICE = "piper:de_DE-thorsten-high"; _l.VOICE_SPEED = 1.0
+        import lib as _l; _l.VOICE = DE_VOICE; _l.VOICE_SPEED = DE_SPEED
     if rest == ["stills"]:
         stills(o, cfg[0], {"yt": stills_at_yt, "tt": stills_at_tt, "de": stills_at_de or stills_at_tt}[mode])
     else:

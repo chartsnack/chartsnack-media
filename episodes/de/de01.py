@@ -47,14 +47,14 @@ s3 = day_scene(20, 28, 1.5e6, Y2, "Tag 28: 1,34 Millionen.", "Die Million ist ge
 s4 = day_scene(28, 30, val(30), Y3, "Tag 30: 5.368.709 €.", "Über 5-mal die Million.", line=(1e6, "1 MILLION €"))
 s5 = recap("Dein verdoppelter Cent:", [("TAG 10", "5,12 €", Y1), ("TAG 20", "5.243 €", Y2), ("TAG 30", "5,37 Mio. €", Y3)])
 
-DECUT = ([("s1", s1, 5.0), ("s2", s2, 11.0), ("s3", s3, 10.0), ("s4", s4, 10.0), ("s5", s5, 9.0)],
-         [(0, 5, 0.1, "Eine Million sofort, oder ein Cent, der sich jeden Tag verdoppelt?"),
-          (5, 11, 0.4, "Tag eins: ein Cent. Tag zwei: zwei Cent. Tag zehn: gerade mal fünf Euro. Und selbst an Tag zwanzig hast du nur rund fünftausend Euro."),
-          (16, 10, 0.4, "Aber verdoppeln heißt: Jeden Tag kommt genau so viel dazu, wie du schon hast. Und an Tag achtundzwanzig knackst du die Million."),
-          (26, 10, 0.4, "Noch zwei Verdopplungen. An Tag dreißig hast du über fünf Komma drei Millionen Euro. Mehr als fünfmal so viel wie die Million."),
-          (36, 9, 0.4, "Die Hälfte davon kommt erst am allerletzten Tag. Das ist exponentielles Wachstum. Folge für mehr.")],
-         [(5.5, 14.0), (16.5, 24.0), (26.5, 33.0)],
-         [0.2, 13.6, 23.6, 33.6, 36.4, 37.6, 38.8])
+DECUT = ([("s1", s1, 6.5), ("s2", s2, 14.5), ("s3", s3, 11.0), ("s4", s4, 13.0), ("s5", s5, 16.0)],
+         [(0, 6.5, 0.1, "Eine Million sofort, oder ein Cent, der sich jeden Tag verdoppelt?"),
+          (6.5, 14.5, 0.4, "Tag eins: ein Cent. Tag zwei: zwei Cent. Tag zehn: gerade mal fünf Euro. Und selbst an Tag zwanzig hast du nur rund fünftausend Euro."),
+          (21, 11, 0.4, "Aber verdoppeln heißt: Jeden Tag kommt genau so viel dazu, wie du schon hast. Und an Tag achtundzwanzig knackst du die Million."),
+          (32, 13, 0.4, "Noch zwei Verdopplungen. An Tag dreißig hast du über fünf Komma drei Millionen Euro. Mehr als fünfmal so viel wie die Million."),
+          (45, 16, 0.4, "Die Hälfte davon kommt erst am allerletzten Tag. Das ist exponentielles Wachstum. Folge für mehr.")],
+         [(7.0, 19.0), (21.5, 30.0), (32.5, 42.0)],
+         [0.2, 19.5, 30.6, 43.6, 45.4, 46.6, 47.8])
 
 if __name__ == "__main__":
-    run("/home/claude/chartsnack/de01", "chartsnack_de01_cent.mp4", None, None, None, None, DECUT, [0.0, 10.5, 9.5, 9.5, 8.5])
+    run("/home/claude/chartsnack/de01", "chartsnack_de01_cent.mp4", None, None, None, None, DECUT, [0.0, 14.0, 10.5, 12.5, 15.0])

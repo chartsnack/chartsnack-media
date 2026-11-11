@@ -10,11 +10,15 @@ Goal: grow fast, pay for the Claude Max plan ($100/month) first via TikTok Creat
 - Kurai gave full permission to upload, schedule and publish, and to change anything on both channels.
 
 ## German channel (since 2026-11-10)
-- TikTok "Chart Snack DE" (handle: see LOG.md), logged in inside Kurai's Chrome → use the Claude in Chrome tools (mcp__claude-in-chrome__*), NOT the built-in browser (TikTok web has no account switching; the built-in browser stays on @chartsnack).
+- TikTok @chartsnackde ("ChartSnackDE"), logged in inside Kurai's Chrome → use the Claude in Chrome tools (mcp__claude-in-chrome__*), NOT the built-in browser (TikTok web has no account switching; the built-in browser stays on @chartsnack).
 - Same upload pipeline as TikTok EN (Cloudinary URL → inject into input[type=file], caption via execCommand, hashtags typed, schedule). Chrome must be open on the PC.
 - German cut per episode: episodes/de/deNN.py (template de01.py), 25 s, German on-screen text (German number format 1.000 / 0,5 via scenes.fmt when DE), German VO with numbers written out as words, ends "Folge für mehr". Build: `python3 episodes/de/deNN.py de` → out_de/, queue/deNN.mp4.
 
 ## Voices
+- huggingface.co / hf.co are allowed in the sandbox since 2026-11-11 (Kurai's settings). Candidates for German:
+  - chatterbox-tts (pip, MIT) multilingual, voice clone from /home/claude/tts/thorsten_ref.wav (12 s of real Thorsten-Voice recordings, from HF dataset Thorsten-Voice/TV-24kHz-Neutral shard 0). Slow on CPU (~7x realtime). lib voice "chatterbox:de:<ref.wav>"; synthesized sentence by sentence (otherwise endings get cut).
+  - Thorsten-Voice/Kokoro (HF, Apache-2.0, German Kokoro fine-tune): tools/tvk.py, runs in venv /home/claude/tvenv (pip install --no-deps kokoro==0.7.16 + torch from system), G2P via piper's espeak. Fast.
+- Cloudinary uploads work directly from the sandbox: `curl -X POST https://api.cloudinary.com/v1_1/lxthmsnt/video/upload -F file=@queue/x.mp4 -F upload_preset=chartsnack_upload` → secure_url (no browser needed).
 - English: Kokoro am_michael (speed 1.1). German: Piper "de_DE-thorsten-high" (CC0, commercial use OK) via `pip install piper-tts`; models come from GitHub (HuggingFace is blocked in the sandbox):
   `mkdir -p /home/claude/tts/piper && cd /home/claude/tts/piper && curl -sL https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-de_DE-thorsten-high.tar.bz2 | tar xj`
   (also available: thorsten_emotional-medium with speaker ids e.g. #6 surprised, kerstin-low (CC0). Do NOT use pavoque (NC) or XTTS/F5 (non-commercial).)
