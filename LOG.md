@@ -19,10 +19,10 @@
 | 2026-11-15 | 15 | Rice on a chessboard (big numbers) | bUVWmrDyMtE (sched. 15.11 19:00) | sched. 15.11 19:00 (tt15, 25 s) |
 | 2026-11-16 | 16 | Years spent sleeping (test: everyday life) | G6nqCFuJT6A (sched. 16.11 12:00) | sched. 16.11 12:00 (tt16, 25 s) |
 | 2026-11-16 | 17 | $1B/$1T split among everyone (money) | qDQpaJ1hQTA (sched. 16.11 19:00) | sched. 16.11 19:00 (tt17, 25 s) |
-| 2026-11-17 | 18 | Secret doubling every 10 min (big numbers) | NOT UPLOADED – YouTube daily upload limit (retry 11.11 22:20) | sched. 17.11 12:00 (tt18, 25 s) |
-| 2026-11-17 | 19 | Cleopatra/pyramids/Moon timeline (test: history) | NOT UPLOADED – YouTube daily upload limit (retry 11.11 22:20) | sched. 17.11 19:00 (tt19, 25 s) |
+| 2026-11-17 | 18 | Secret doubling every 10 min (big numbers) | RWu5ZUMEXt4 (sched. 17.11 12:00, uploaded 11.11) | sched. 17.11 12:00 (tt18, 25 s) |
+| 2026-11-17 | 19 | Cleopatra/pyramids/Moon timeline (test: history) | QQTm0M8kn1I (sched. 17.11 19:00, uploaded 11.11) | sched. 17.11 19:00 (tt19, 25 s) |
 
-Next free slot: 2026-11-18 12:00 (then 2/day: 12:00 + 19:00). Open: YouTube ep18 (17.11 12:00) + ep19 (17.11 19:00) still to upload.
+Next free slot: 2026-11-18 12:00 (then 2/day: 12:00 + 19:00).
 
 ## Weekly review (2026-11-10)
 - YouTube 28 d: 2,848 views, 45 % viewed vs 55 % swiped, +3 subs (3 total). Best: 1B seconds 1,335 / $1,000-a-day 1,213; heart 470 views in first 3 h (36 % avg viewed); paper 125, car-to-moon ~230.
@@ -33,11 +33,11 @@ Next free slot: 2026-11-18 12:00 (then 2/day: 12:00 + 19:00). Open: YouTube ep18
 Account created by Kurai; runs in Kurai's Chrome (Claude in Chrome). Handle: @chartsnackde (display name ChartSnackDE, can be renamed from 17.11). Logged in in Chrome since 2026-11-11. Bio + logo set.
 | Date | DE | Topic | TikTok DE |
 |---|---|---|---|
-| (12.11 19:00 planned) | de01 | Cent verdoppeln | ready in queue/de01.mp4 – not uploaded (login pending) |
-| (13.11 19:00 planned) | de02 | Karten mischen 52! | ready queue/de02.mp4 |
-| (14.11 19:00 planned) | de03 | Lotto 6 aus 49 | ready queue/de03.mp4 |
-| (15.11 19:00 planned) | de04 | Reis auf dem Schachbrett | ready queue/de04.mp4 |
-| (16.11 19:00 planned) | de05 | Geheimnis verdoppelt sich | ready queue/de05.mp4 |
-| (17.11 19:00 planned) | de06 | Jahre im Schlaf | ready queue/de06.mp4 |
+| (on hold) | de01 | Cent verdoppeln | NOT uploaded – Kurai rejected the Piper/Thorsten voice; waiting for his voice choice (Orpheus tests sent 11.11) |
+| (13.11 19:00 planned) | de02 | Karten mischen 52! | on hold (voice) |
+| (14.11 19:00 planned) | de03 | Lotto 6 aus 49 | on hold (voice) |
+| (15.11 19:00 planned) | de04 | Reis auf dem Schachbrett | on hold (voice) |
+| (16.11 19:00 planned) | de05 | Geheimnis verdoppelt sich | on hold (voice) |
+| (17.11 19:00 planned) | de06 | Jahre im Schlaf | on hold (voice) |
 
 Next free slot DE: 2026-11-18 12:00 (then 2/day: 12:00 + 19:00, same as English).

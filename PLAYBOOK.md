@@ -98,3 +98,7 @@ Append one line per published video to `LOG.md`: date, ep, topic, YouTube id, Ti
 - TikTok: typing emojis with the computer "type" action crashes the editor ("Es ist etwas schiefgelaufen"). Insert caption text+emoji with execCommand('insertText'), then type hashtags one by one with the computer tool.
 - TikTok "Weiter und veröffentlichen?" dialog with "Jetzt veröffentlichen": never click that (would publish now). If the check hangs on "Überprüfung läuft" for >10 min, reload the upload page and re-inject the same Cloudinary file – the check then passes instantly.
 - tools/scenes.py: reusable scene builders (hook, bars_scene, recap, statement) used by ep09+ to build episodes faster.
+
+## Learnings (2026-11-11)
+- YouTube upload dialog: #done-button stays disabled until the file upload finished – poll until enabled before clicking.
+- German voice status: Kurai rejected Piper Thorsten, Thorsten-Kokoro and Chatterbox (also the clone). Under test: Kartoffel-Orpheus (tools/orpheus_de.py, llama-cpp-python + snac, GGUF from TheVisitorX/Kartoffel_Orpheus-3B_german_{natural,synthetic}-v0.1-Q5_K_M-GGUF; ~20x realtime on 2 CPUs). "natural" has lo-fi podcast sound → resemble-enhance (pip --no-deps, tools/ds_stub.py for deepspeed, patch fsolve()[0] in lcfm/cfm.py) or use "synthetic" (studio speakers Martin/Luca/Anne/Emma + emotions, prompt "Martin - Excited: text"). Do not upload German videos until Kurai approved a voice.
