@@ -102,3 +102,10 @@ Append one line per published video to `LOG.md`: date, ep, topic, YouTube id, Ti
 ## Learnings (2026-11-11)
 - YouTube upload dialog: #done-button stays disabled until the file upload finished – poll until enabled before clicking.
 - German voice status: Kurai rejected Piper Thorsten, Thorsten-Kokoro and Chatterbox (also the clone). Under test: Kartoffel-Orpheus (tools/orpheus_de.py, llama-cpp-python + snac, GGUF from TheVisitorX/Kartoffel_Orpheus-3B_german_{natural,synthetic}-v0.1-Q5_K_M-GGUF; ~20x realtime on 2 CPUs). "natural" has lo-fi podcast sound → resemble-enhance (pip --no-deps, tools/ds_stub.py for deepspeed, patch fsolve()[0] in lcfm/cfm.py) or use "synthetic" (studio speakers Martin/Luca/Anne/Emma + emotions, prompt "Martin - Excited: text"). Do not upload German videos until Kurai approved a voice.
+
+## Long-form (since 2026-11-13, test)
+- Kit: tools/lf.py (1920x1080, 30 fps). A video = list of Beat(fn, vo_text, min_dur, chapter=i). VO is synthesized first; each beat lasts max(min_dur, vo + pad) → no sync problems. Beats render in parallel (fork pool, 2 workers); renders are cached per beat (delete outdir/bNNN.mp4 to re-render one).
+- Template: episodes/lf01.py (reusable visuals: three_up, title_card, timeline zoom, stack_climb log camera, compare_bars, people_grid, calendar, lifebar, recap table, outro). `python3 lf01.py stills 0,3,9` → contact sheet; `python3 lf01.py build` → final + chapters.txt (paste timestamps into the description).
+- Kokoro speed 1.0 for long-form. lf01 = 4:48 for 7 chapters (~35 s per sub-topic). For 8+ min, add more beats/explanation per chapter.
+- Do not keep a copy of lf.py in /home/claude/chartsnack (it shadows tools/lf.py).
+- Upload: same YouTube dialog (rAF patch, Erstellen → Videos hochladen); visibility radio name="PUBLIC" to publish. Custom thumbnail input exists (accept image/*) but upload did not apply – channel probably needs phone verification for custom thumbnails.

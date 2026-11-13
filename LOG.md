@@ -41,3 +41,8 @@ Account created by Kurai; runs in Kurai's Chrome (Claude in Chrome). Handle: @ch
 | (17.11 19:00 planned) | de06 | Jahre im Schlaf | on hold (voice) |
 
 Next free slot DE: 2026-11-18 12:00 (then 2/day: 12:00 + 19:00, same as English).
+
+## Long-form (YouTube, 16:9)
+| Date | LF | Topic | YouTube |
+|---|---|---|---|
+| 2026-11-13 | lf01 | How big is a TRILLION? 7 ways (4:48, chapters) | amtDWzMX0hk (public, test) – custom thumbnail brand/thumb_lf01.png could not be applied (likely needs channel verification) |
