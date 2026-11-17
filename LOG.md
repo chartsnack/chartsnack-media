@@ -26,8 +26,9 @@
 | 2026-11-19 | 22 | $1B in $1 bills end to end (money) | QsoDYVyAeUM (sched. 19.11 12:00) | sched. 19.11 12:00 (tt22, 25 s) |
 | 2026-11-19 | 23 | Monkey typing BANANA (big numbers) | 4HFKB0wrc44 (sched. 19.11 19:00) | sched. 19.11 19:00 (tt23, 25 s) |
 | 2026-11-20 | 24 | Breaths in a lifetime (test: human body) | lJyX21K96_k (sched. 20.11 12:00) | sched. 20.11 12:00 (tt24, 25 s) |
+| 2026-11-20 | 25 | $1T at $1M a day (money) | YTID25 (sched. 20.11 19:00) | sched. 20.11 19:00 (tt25, 25 s) |
 
-Next free slot: 2026-11-20 19:00 (then 2/day: 12:00 + 19:00).
+Next free slot: 2026-11-21 12:00 (then 2/day: 12:00 + 19:00).
 
 ## Weekly review (2026-11-10)
 - YouTube 28 d: 2,848 views, 45 % viewed vs 55 % swiped, +3 subs (3 total). Best: 1B seconds 1,335 / $1,000-a-day 1,213; heart 470 views in first 3 h (36 % avg viewed); paper 125, car-to-moon ~230.
