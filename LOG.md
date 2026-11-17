@@ -21,8 +21,8 @@
 | 2026-11-16 | 17 | $1B/$1T split among everyone (money) | qDQpaJ1hQTA (sched. 16.11 19:00) | sched. 16.11 19:00 (tt17, 25 s) |
 | 2026-11-17 | 18 | Secret doubling every 10 min (big numbers) | RWu5ZUMEXt4 (sched. 17.11 12:00, uploaded 11.11) | sched. 17.11 12:00 (tt18, 25 s) |
 | 2026-11-17 | 19 | Cleopatra/pyramids/Moon timeline (test: history) | QQTm0M8kn1I (sched. 17.11 19:00, uploaded 11.11) | sched. 17.11 19:00 (tt19, 25 s) |
-
 | 2026-11-18 | 20 | $1/second since pyramids (money) | OWgUhxB8ir4 (sched. 18.11 12:00) | sched. 18.11 12:00 (tt20, 25 s) |
+
 Next free slot: 2026-11-18 19:00 (then 2/day: 12:00 + 19:00).
 
 ## Weekly review (2026-11-10)
