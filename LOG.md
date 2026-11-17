@@ -23,8 +23,9 @@
 | 2026-11-17 | 19 | Cleopatra/pyramids/Moon timeline (test: history) | QQTm0M8kn1I (sched. 17.11 19:00, uploaded 11.11) | sched. 17.11 19:00 (tt19, 25 s) |
 | 2026-11-18 | 20 | $1/second since pyramids (money) | OWgUhxB8ir4 (sched. 18.11 12:00) | sched. 18.11 12:00 (tt20, 25 s) |
 | 2026-11-18 | 21 | Birthday paradox (big numbers/odds) | UikbxjIswiU (sched. 18.11 19:00) | sched. 18.11 19:00 (tt21, 25 s) |
+| 2026-11-19 | 22 | $1B in $1 bills end to end (money) | QsoDYVyAeUM (sched. 19.11 12:00) | sched. 19.11 12:00 (tt22, 25 s) |
 
-Next free slot: 2026-11-19 12:00 (then 2/day: 12:00 + 19:00).
+Next free slot: 2026-11-19 19:00 (then 2/day: 12:00 + 19:00).
 
 ## Weekly review (2026-11-10)
 - YouTube 28 d: 2,848 views, 45 % viewed vs 55 % swiped, +3 subs (3 total). Best: 1B seconds 1,335 / $1,000-a-day 1,213; heart 470 views in first 3 h (36 % avg viewed); paper 125, car-to-moon ~230.
