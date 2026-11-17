@@ -31,8 +31,9 @@
 | 2026-11-21 | 27 | $1B over 80 years per day (money) | YTID27 (sched. 21.11 19:00) | sched. 21.11 19:00 (tt27, 25 s) |
 | 2026-11-22 | 28 | Generations since the pyramids (test: history) | YTID28 (sched. 22.11 12:00) | sched. 22.11 12:00 (tt28, 25 s) |
 | 2026-11-22 | 29 | Lily pad doubling riddle (big numbers) | YTID29 (sched. 22.11 19:00) | sched. 22.11 19:00 (tt29, 25 s) |
+| 2026-11-23 | 30 | $100M at $10k a day (money) | YT PENDING (daily limit) (sched. 23.11 12:00) | sched. 23.11 12:00 (tt30, 25 s) |
 
-Next free slot: 2026-11-23 12:00 (then 2/day: 12:00 + 19:00).
+Next free slot: 2026-11-23 19:00 (then 2/day: 12:00 + 19:00).
 
 ## Weekly review (2026-11-10)
 - YouTube 28 d: 2,848 views, 45 % viewed vs 55 % swiped, +3 subs (3 total). Best: 1B seconds 1,335 / $1,000-a-day 1,213; heart 470 views in first 3 h (36 % avg viewed); paper 125, car-to-moon ~230.
