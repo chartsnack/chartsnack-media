@@ -26,16 +26,31 @@
 | 2026-11-19 | 22 | $1B in $1 bills end to end (money) | QsoDYVyAeUM (sched. 19.11 12:00) | sched. 19.11 12:00 (tt22, 25 s) |
 | 2026-11-19 | 23 | Monkey typing BANANA (big numbers) | 4HFKB0wrc44 (sched. 19.11 19:00) | sched. 19.11 19:00 (tt23, 25 s) |
 | 2026-11-20 | 24 | Breaths in a lifetime (test: human body) | lJyX21K96_k (sched. 20.11 12:00) | sched. 20.11 12:00 (tt24, 25 s) |
-| 2026-11-20 | 25 | $1T at $1M a day (money) | YTID25 (sched. 20.11 19:00) | sched. 20.11 19:00 (tt25, 25 s) |
-| 2026-11-21 | 26 | Tower of Hanoi 64 discs (big numbers) | YTID26 (sched. 21.11 12:00) | sched. 21.11 12:00 (tt26, 25 s) |
-| 2026-11-21 | 27 | $1B over 80 years per day (money) | YTID27 (sched. 21.11 19:00) | sched. 21.11 19:00 (tt27, 25 s) |
-| 2026-11-22 | 28 | Generations since the pyramids (test: history) | YTID28 (sched. 22.11 12:00) | sched. 22.11 12:00 (tt28, 25 s) |
-| 2026-11-22 | 29 | Lily pad doubling riddle (big numbers) | YTID29 (sched. 22.11 19:00) | sched. 22.11 19:00 (tt29, 25 s) |
+| 2026-11-20 | 25 | $1T at $1M a day (money) | cCdu7m_oh2o (sched. 20.11 19:00) | sched. 20.11 19:00 (tt25, 25 s) |
+| 2026-11-21 | 26 | Tower of Hanoi 64 discs (big numbers) | jYArkDpBaHU (sched. 21.11 12:00) | sched. 21.11 12:00 (tt26, 25 s) |
+| 2026-11-21 | 27 | $1B over 80 years per day (money) | Ukyfi54zL5A (sched. 21.11 19:00) | sched. 21.11 19:00 (tt27, 25 s) |
+| 2026-11-22 | 28 | Generations since the pyramids (test: history) | 2auobg8fZJA (sched. 22.11 12:00) | sched. 22.11 12:00 (tt28, 25 s) |
+| 2026-11-22 | 29 | Lily pad doubling riddle (big numbers) | bSagBn0fo7M (sched. 22.11 19:00) | sched. 22.11 19:00 (tt29, 25 s) |
 | 2026-11-23 | 30 | $100M at $10k a day (money) | YT PENDING (daily limit) (sched. 23.11 12:00) | sched. 23.11 12:00 (tt30, 25 s) |
 | 2026-11-23 | 31 | Water you drink in a lifetime (test: everyday life) | YT PENDING (daily limit) (sched. 23.11 19:00) | sched. 23.11 19:00 (tt31, 25 s) |
 | 2026-11-24 | 32 | Possible chess games (big numbers) | YT PENDING (daily limit) (sched. 24.11 12:00) | sched. 24.11 12:00 (tt32, 25 s) |
+| 2026-11-24 | 33 | 30 coin flips doubling $1 (money/odds) | YT PENDING (daily limit) (sched. 24.11 19:00) | sched. 24.11 19:00 (tt33, 25 s) |
 
-Next free slot: 2026-11-24 19:00 (then 2/day: 12:00 + 19:00).
+Next free slot: 2026-11-25 12:00 (then 2/day: 12:00 + 19:00).
+
+YouTube pending (daily limit 17.11) – upload from queue/epNN.mp4, schedule, AI question "Ja":
+- ep30 → 23.11 12:00 | "You win $100 MILLION and spend $10,000 a day. When is it gone? 💰⏳ #shorts" | desc: "Ten thousand dollars, every single day. How long does $1 million last? $10 million? And $100 MILLION? Guess before the end. 👇" + subscribe line + "#shorts #money #lottery #millionaire #facts #didyouknow" (a draft of ep30 may exist in Studio from the failed attempt – delete it)
+- ep31 → 23.11 19:00 | "2 liters of water a day. How much in your WHOLE LIFE? 💧 #shorts" | desc: "One glass after another, every day of your life. How much water is that in a week, a year and 80 years? Guess before the end. 👇" + subscribe line + "#shorts #water #humanbody #life #facts #didyouknow"
+- ep32 → 24.11 12:00 | "How many different CHESS GAMES are possible? ♟️🤯 #shorts" | desc: "20 first moves for white, 20 answers for black … how fast does the number of possible chess games explode? Guess before the end. 👇" + subscribe line + "#shorts #chess #math #bignumbers #facts #didyouknow"
+- ep33 → 24.11 19:00 | "Bet $1, double it on every coin flip. 30 wins in a row? 🪙💸 #shorts" | desc: "Start with one dollar. Every coin flip you win doubles it. How rich are you after 10, 20 and 30 wins in a row – and what are the odds? Guess before the end. 👇" + subscribe line + "#shorts #money #math #probability #facts #didyouknow"
+(subscribe line: "A new chart snack every day – subscribe so you don't miss the next one.")
+
+## Weekly review (2026-11-17)
+- YouTube 28 d: 5,621 views (was 2,848), 20.3 h watch time, +5 subs (5 total); last 48 h only 256 views – YouTube reach is slowing. All-time top still 1B seconds 1,337 / $1,000-a-day 1,213 / heart 981.
+- YouTube this week: deck shuffles 333 (11 % viewed vs 89 % swiped), $1B stack 332, penny-vs-million 263 (39 % viewed), $15/h 224, 117B humans 202; sleep 120 (46 % viewed – best retention); split $1B 24 (15 % viewed), lottery 19, Cleopatra 13 in 3 h (21 % avg viewed).
+- TikTok EN: every 25 s cut since 14.11 lands at ~2,300–2,470 views (very stable). Best engagement: $1T weight 2,472 views / 48 likes / 2 comments; sleep 2,358 / 15 / 2 comments. Cleopatra (17.11 19:00) showed 0 views after 3 h – check next week.
+- TikTok DE: still 0 posts (German voice not approved by Kurai) – nothing to compare yet.
+- Plan this week: 10 of 14 big-number/money (pyramids $/s, birthday, $1 bills to the Sun, monkey/BANANA, $1M a day, Hanoi, $1B over 80 y, lily pads, $100M at $10k/day, chess, coin flips), tests: breaths (body), generations (history), water (everyday). YouTube hit the daily upload limit after 10 uploads → ep30–ep33 YouTube pending.
 
 ## Weekly review (2026-11-10)
 - YouTube 28 d: 2,848 views, 45 % viewed vs 55 % swiped, +3 subs (3 total). Best: 1B seconds 1,335 / $1,000-a-day 1,213; heart 470 views in first 3 h (36 % avg viewed); paper 125, car-to-moon ~230.
@@ -52,6 +67,8 @@ Account created by Kurai; runs in Kurai's Chrome (Claude in Chrome). Handle: @ch
 | (15.11 19:00 planned) | de04 | Reis auf dem Schachbrett | on hold (voice) |
 | (16.11 19:00 planned) | de05 | Geheimnis verdoppelt sich | on hold (voice) |
 | (17.11 19:00 planned) | de06 | Jahre im Schlaf | on hold (voice) |
+
+(2026-11-17 weekly run: no new German cuts made/uploaded – German voice still not approved by Kurai.)
 
 Next free slot DE: 2026-11-18 12:00 (then 2/day: 12:00 + 19:00, same as English).
 
