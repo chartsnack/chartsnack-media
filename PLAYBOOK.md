@@ -109,3 +109,13 @@ Append one line per published video to `LOG.md`: date, ep, topic, YouTube id, Ti
 - Kokoro speed 1.0 for long-form. lf01 = 4:48 for 7 chapters (~35 s per sub-topic). For 8+ min, add more beats/explanation per chapter.
 - Do not keep a copy of lf.py in /home/claude/chartsnack (it shadows tools/lf.py).
 - Upload: same YouTube dialog (rAF patch, Erstellen → Videos hochladen); visibility radio name="PUBLIC" to publish. Custom thumbnail input exists (accept image/*) but upload did not apply – channel probably needs phone verification for custom thumbnails.
+
+## Learnings (2026-11-17, weekly run)
+- Fast pipeline (~8 min per episode incl. both uploads): write epNN.py from tools/scenes.py builders (bars_scene / recap / custom scene), `python3 epNN.py yt stills` → look → render yt+tt in the background while the previous episode uploads. Helper scripts used: /home/claude/pub.sh-style "copy to queue + commit + push + curl Cloudinary upload of ttNN" (Cloudinary upload straight from the sandbox, no browser needed).
+- Browser JS helpers are now in tools/yt_helpers.js and tools/tt_helpers.js (paste the file content into the tab; usage notes at the top). javascript_tool calls time out after ~45-50 s → keep each call short (split upload / schedule / plan into separate calls).
+- Hook voice line must be ≤ ~12 words (scene 4.5 s, room 4.15 s) – long hooks get "TOO LONG". Fix + `python3 epNN.py yt none` re-mixes the VO without re-rendering scenes.
+- TikTok: the content check ("Überprüfung läuft") often only finishes AFTER the first "Planen" click. Pattern that worked 14/14: Planen → "Weiter und veröffentlichen?" → Abbrechen → ttWaitOk() (a few seconds) → verify date/time → Planen. Don't wait for "Keine Probleme" before the first click (it can hang for 10+ min).
+- TikTok: typing a hashtag right after another sometimes drops one (#egypt) – verify 7 '#' in the caption before planning.
+- YouTube: the success dialog after "Planen" must be closed with its visible "Schließen" button (ytCloseShare), otherwise the next "Erstellen" finds no file input. The Shorts list caches: reload /videos/short to see new IDs.
+- YouTube daily limit hit on the 11th upload attempt (10 succeeded). A failed attempt may leave a draft.
+- German channel: no DE cuts were produced on 17.11 because Kurai has not approved a German voice yet (see Learnings 2026-11-11) – the weekly prompt still mentions Piper/Thorsten, but the later decision wins.
