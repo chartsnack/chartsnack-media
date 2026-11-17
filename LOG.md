@@ -33,8 +33,9 @@
 | 2026-11-22 | 29 | Lily pad doubling riddle (big numbers) | YTID29 (sched. 22.11 19:00) | sched. 22.11 19:00 (tt29, 25 s) |
 | 2026-11-23 | 30 | $100M at $10k a day (money) | YT PENDING (daily limit) (sched. 23.11 12:00) | sched. 23.11 12:00 (tt30, 25 s) |
 | 2026-11-23 | 31 | Water you drink in a lifetime (test: everyday life) | YT PENDING (daily limit) (sched. 23.11 19:00) | sched. 23.11 19:00 (tt31, 25 s) |
+| 2026-11-24 | 32 | Possible chess games (big numbers) | YT PENDING (daily limit) (sched. 24.11 12:00) | sched. 24.11 12:00 (tt32, 25 s) |
 
-Next free slot: 2026-11-24 12:00 (then 2/day: 12:00 + 19:00).
+Next free slot: 2026-11-24 19:00 (then 2/day: 12:00 + 19:00).
 
 ## Weekly review (2026-11-10)
 - YouTube 28 d: 2,848 views, 45 % viewed vs 55 % swiped, +3 subs (3 total). Best: 1B seconds 1,335 / $1,000-a-day 1,213; heart 470 views in first 3 h (36 % avg viewed); paper 125, car-to-moon ~230.
