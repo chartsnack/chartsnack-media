@@ -31,19 +31,13 @@
 | 2026-11-21 | 27 | $1B over 80 years per day (money) | Ukyfi54zL5A (sched. 21.11 19:00) | sched. 21.11 19:00 (tt27, 25 s) |
 | 2026-11-22 | 28 | Generations since the pyramids (test: history) | 2auobg8fZJA (sched. 22.11 12:00) | sched. 22.11 12:00 (tt28, 25 s) |
 | 2026-11-22 | 29 | Lily pad doubling riddle (big numbers) | bSagBn0fo7M (sched. 22.11 19:00) | sched. 22.11 19:00 (tt29, 25 s) |
-| 2026-11-23 | 30 | $100M at $10k a day (money) | YT PENDING (daily limit) (sched. 23.11 12:00) | sched. 23.11 12:00 (tt30, 25 s) |
-| 2026-11-23 | 31 | Water you drink in a lifetime (test: everyday life) | YT PENDING (daily limit) (sched. 23.11 19:00) | sched. 23.11 19:00 (tt31, 25 s) |
-| 2026-11-24 | 32 | Possible chess games (big numbers) | YT PENDING (daily limit) (sched. 24.11 12:00) | sched. 24.11 12:00 (tt32, 25 s) |
-| 2026-11-24 | 33 | 30 coin flips doubling $1 (money/odds) | YT PENDING (daily limit) (sched. 24.11 19:00) | sched. 24.11 19:00 (tt33, 25 s) |
+| 2026-11-23 | 30 | $100M at $10k a day (money) | M7o3pz-IecE (sched. 23.11 12:00, uploaded 18.11) | sched. 23.11 12:00 (tt30, 25 s) |
+| 2026-11-23 | 31 | Water you drink in a lifetime (test: everyday life) | r5X56nLnfek (sched. 23.11 19:00, uploaded 18.11) | sched. 23.11 19:00 (tt31, 25 s) |
+| 2026-11-24 | 32 | Possible chess games (big numbers) | CXN9HXeor4M (sched. 24.11 12:00, uploaded 18.11) | sched. 24.11 12:00 (tt32, 25 s) |
+| 2026-11-24 | 33 | 30 coin flips doubling $1 (money/odds) | 3HWOZRCh-4I (sched. 24.11 19:00, uploaded 18.11) | sched. 24.11 19:00 (tt33, 25 s) |
 
 Next free slot: 2026-11-25 12:00 (then 2/day: 12:00 + 19:00).
 
-YouTube pending (daily limit 17.11) – upload from queue/epNN.mp4, schedule, AI question "Ja":
-- ep30 → 23.11 12:00 | "You win $100 MILLION and spend $10,000 a day. When is it gone? 💰⏳ #shorts" | desc: "Ten thousand dollars, every single day. How long does $1 million last? $10 million? And $100 MILLION? Guess before the end. 👇" + subscribe line + "#shorts #money #lottery #millionaire #facts #didyouknow" (a draft of ep30 may exist in Studio from the failed attempt – delete it)
-- ep31 → 23.11 19:00 | "2 liters of water a day. How much in your WHOLE LIFE? 💧 #shorts" | desc: "One glass after another, every day of your life. How much water is that in a week, a year and 80 years? Guess before the end. 👇" + subscribe line + "#shorts #water #humanbody #life #facts #didyouknow"
-- ep32 → 24.11 12:00 | "How many different CHESS GAMES are possible? ♟️🤯 #shorts" | desc: "20 first moves for white, 20 answers for black … how fast does the number of possible chess games explode? Guess before the end. 👇" + subscribe line + "#shorts #chess #math #bignumbers #facts #didyouknow"
-- ep33 → 24.11 19:00 | "Bet $1, double it on every coin flip. 30 wins in a row? 🪙💸 #shorts" | desc: "Start with one dollar. Every coin flip you win doubles it. How rich are you after 10, 20 and 30 wins in a row – and what are the odds? Guess before the end. 👇" + subscribe line + "#shorts #money #math #probability #facts #didyouknow"
-(subscribe line: "A new chart snack every day – subscribe so you don't miss the next one.")
 
 ## Weekly review (2026-11-17)
 - YouTube 28 d: 5,621 views (was 2,848), 20.3 h watch time, +5 subs (5 total); last 48 h only 256 views – YouTube reach is slowing. All-time top still 1B seconds 1,337 / $1,000-a-day 1,213 / heart 981.
