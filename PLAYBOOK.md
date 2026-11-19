@@ -119,3 +119,9 @@ Append one line per published video to `LOG.md`: date, ep, topic, YouTube id, Ti
 - YouTube: the success dialog after "Planen" must be closed with its visible "Schließen" button (ytCloseShare), otherwise the next "Erstellen" finds no file input. The Shorts list caches: reload /videos/short to see new IDs.
 - YouTube daily limit hit on the 11th upload attempt (10 succeeded). A failed attempt may leave a draft.
 - German channel: no DE cuts were produced on 17.11 because Kurai has not approved a German voice yet (see Learnings 2026-11-11) – the weekly prompt still mentions Piper/Thorsten, but the later decision wins.
+
+## Direct posting (since 2026-11-19, Kurai's request)
+- In addition to the 12:00/19:00 scheduled posts (filled until 24.11 by the weekly run), Kurai wants two videos per day published IMMEDIATELY (no platform scheduling) at 16:45 and 20:00 Europe/Berlin on YouTube + TikTok EN.
+- Two scheduled tasks ("Chart Snack Direktpost 16:45" runs 16:41, "Chart Snack Direktpost 20:00" runs 19:56, both on Kurai's PC) take the matching "ready" entry from queue/direct.json and publish it (tools/yt_helpers.js ytUpPublic, tools/tt_helpers.js ttPost), then mark it "posted" and log it.
+- queue/direct.json entries: slot, ep, status, yt_title, yt_desc, tt_caption, tt_tags, tt_url (optional; else curl-upload queue/ttNN.mp4 to Cloudinary). Filled with ep34–ep47 up to 25.11 20:00 – the weekly run should add the next 14 (tools/quick.py builds an episode from one spec; see episodes/ep36.py).
+- YouTube daily limit: 2 direct + 2 scheduled uploads per day is fine, but the weekly run uploading 14 scheduled videos the same night will hit the limit – upload max ~8 in the weekly run and let a follow-up do the rest.
