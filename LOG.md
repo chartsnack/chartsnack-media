@@ -35,6 +35,7 @@
 | 2026-11-23 | 31 | Water you drink in a lifetime (test: everyday life) | r5X56nLnfek (sched. 23.11 19:00, uploaded 18.11) | sched. 23.11 19:00 (tt31, 25 s) |
 | 2026-11-24 | 32 | Possible chess games (big numbers) | CXN9HXeor4M (sched. 24.11 12:00, uploaded 18.11) | sched. 24.11 12:00 (tt32, 25 s) |
 | 2026-11-24 | 33 | 30 coin flips doubling $1 (money/odds) | 3HWOZRCh-4I (sched. 24.11 19:00, uploaded 18.11) | sched. 24.11 19:00 (tt33, 25 s) |
+| 2026-11-19 | 34 | $1 million in pennies – stack height (money) | bHFxnxSAFVE (public 16:45) | public 16:45 (tt34, 25 s) |
 
 Next free slot: 2026-11-25 12:00 (then 2/day: 12:00 + 19:00).
 
