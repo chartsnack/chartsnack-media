@@ -27,3 +27,9 @@ window.ytUp=async(n,title,desc,date)=>{ await ytCloseShare(); [...document.query
 window.ytFinish=async(tm,dt)=>{await sleep(600); const v=[[...document.querySelectorAll('ytcp-datetime-picker input')].map(i=>i.value)[0], document.querySelector('ytcp-uploads-dialog #datepicker-trigger')?.innerText]; if(v[0]!=tm||v[1]!=dt) return ['MISMATCH',v]; return [v, await ytDone()];};
 window.ytIds=()=>[...document.querySelectorAll('ytcp-video-row')].slice(0,14).map(r=>(r.querySelector('a[href*="/video/"]')?.getAttribute('href')||'').split('/')[2]+' '+r.innerText.replace(/\s+/g,' ').slice(5,40)+' '+(r.innerText.match(/Geplant|Öffentlich|Privat|Entwurf/)||[''])[0]);
 'ok'
+// --- direct publishing (since 2026-11-19): ytUpPublic(NN, title, desc) -> visibility "Öffentlich" right away, then ytDone()
+window.ytUpPublic=async(n,title,desc)=>{ await ytCloseShare(); [...document.querySelectorAll('ytcp-button')].find(b=>b.innerText.trim()=='Erstellen').click(); await sleep(1000);
+ const sz=await ytOpen(`https://raw.githubusercontent.com/chartsnack/chartsnack-media/main/queue/ep${n}.mp4`);
+ const r=await ytDetails(title,desc); const y=document.querySelector('tp-yt-paper-radio-button[name=VIDEO_HAS_ALTERED_CONTENT_YES]'); y.click(); await sleep(500);
+ const ai=y.getAttribute('aria-checked'); const dl=document.querySelector('ytcp-uploads-dialog'); for(let i=0;i<3;i++){dl.querySelector('#next-button').click(); await sleep(1500);}
+ const pub=dl.querySelector('tp-yt-paper-radio-button[name=PUBLIC]'); pub.click(); await sleep(800); return [sz, r[0], ai, pub.getAttribute('aria-checked')];};

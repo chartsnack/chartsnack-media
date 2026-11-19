@@ -20,3 +20,6 @@ window.ttPlan=async()=>{ for(let i=0;i<30;i++){ const b=[...document.querySelect
  const t=document.body.innerText; if(/Weiter und veröffentlichen/.test(t)){[...document.querySelectorAll('button')].find(b=>b.innerText.trim()=='Abbrechen')?.click(); return 'dialog-cancelled';} return location.pathname;};
 window.ttWaitOk=async()=>{for(let i=0;i<20;i++){ if(/Keine Probleme gefunden/.test(document.body.innerText)) return true; await sleep(2000);} return false;};
 'ok'
+// --- direct publishing (since 2026-11-19): after caption + hashtags call ttPost(); if it returns 'check-dialog', call ttWaitOk() and ttPost() again.
+window.ttPost=async()=>{ for(let i=0;i<30;i++){ const b=[...document.querySelectorAll('button')].find(b=>b.innerText.trim()=='Veröffentlichen'); if(b&&!b.disabled&&b.getAttribute('aria-disabled')!=='true'){ b.click(); break;} await sleep(1000);} await sleep(4000);
+ const t=document.body.innerText; if(/Weiter und veröffentlichen/.test(t)){ const j=[...document.querySelectorAll('button')].find(b=>b.innerText.trim()=='Jetzt veröffentlichen'); if(j){ j.click(); await sleep(5000); return 'posted-now:'+location.pathname;} [...document.querySelectorAll('button')].find(b=>b.innerText.trim()=='Abbrechen')?.click(); return 'check-dialog';} return location.pathname;};
