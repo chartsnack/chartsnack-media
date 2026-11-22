@@ -38,6 +38,7 @@
 | 2026-11-19 | 34 | $1 million in pennies – stack height (money) | bHFxnxSAFVE (public 16:45) | public 16:45 (tt34, 25 s) |
 | 2026-11-19 | 35 | Save $1 more every day – total after 10 years (money) | QIwCs7Cq0RU (public 20:00) | public 20:00 (tt35, 25 s) |
 | 2026-11-22 | 40 | Rubik's Cube positions (big numbers) | PD7Zl1th0cE (public 16:45) | public 16:45 (tt40, 25 s) |
+| 2026-11-22 | 41 | $100k/year salary – time to become a billionaire (money) | yd36dwKN6IM (public 20:00) | public 20:00 (tt41, 25 s) |
 
 Next free slot: 2026-11-25 12:00 (then 2/day: 12:00 + 19:00).
 
