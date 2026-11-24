@@ -50,8 +50,9 @@
 | 2026-11-27 | 52 | Googol vs atoms in Earth/universe (big numbers) | ytid52 (sched. 27.11 12:00) | sched. 27.11 12:00 (tt52, 25 s) |
 | 2026-11-27 | 53 | Work hours in a career (test: everyday life) | ytid53 (sched. 27.11 19:00) | sched. 27.11 19:00 (tt53, 25 s) |
 | 2026-11-28 | 54 | $1 per second of sleep (money) | ytid54 (sched. 28.11 12:00) | sched. 28.11 12:00 (tt54, 25 s) |
+| 2026-11-28 | 55 | Royal flush at 1 hand per minute (big numbers/odds) | ytid55 (sched. 28.11 19:00) | sched. 28.11 19:00 (tt55, 25 s) |
 
-Next free slot: 2026-11-28 19:00 (then 2/day: 12:00 + 19:00).
+Next free slot: 2026-11-29 12:00 (then 2/day: 12:00 + 19:00).
 
 
 ## Weekly review (2026-11-17)
