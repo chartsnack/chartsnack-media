@@ -125,3 +125,14 @@ Append one line per published video to `LOG.md`: date, ep, topic, YouTube id, Ti
 - Two scheduled tasks ("Chart Snack Direktpost 16:45" runs 16:41, "Chart Snack Direktpost 20:00" runs 19:56, both on Kurai's PC) take the matching "ready" entry from queue/direct.json and publish it (tools/yt_helpers.js ytUpPublic, tools/tt_helpers.js ttPost), then mark it "posted" and log it.
 - queue/direct.json entries: slot, ep, status, yt_title, yt_desc, tt_caption, tt_tags, tt_url (optional; else curl-upload queue/ttNN.mp4 to Cloudinary). Filled with ep34–ep47 up to 25.11 20:00 – the weekly run should add the next 14 (tools/quick.py builds an episode from one spec; see episodes/ep36.py).
 - YouTube daily limit: 2 direct + 2 scheduled uploads per day is fine, but the weekly run uploading 14 scheduled videos the same night will hit the limit – upload max ~8 in the weekly run and let a follow-up do the rest.
+
+## Learnings (2026-11-24, weekly run)
+- Whole week (14 eps, YT 8 + TikTok 14) done in ~1.5 h: write 4 quick.py specs at once → `python3 epNN.py yt stills` for all, combine stills into one image and look → render yt+tt in a background loop (~75 s per episode) while uploading the previous ones.
+- YouTube Studio has Trusted Types: `eval()` of fetched helper code fails → paste tools/yt_helpers.js content directly into javascript_tool (once per page load).
+- TikTok: helpers survive SPA navigation. After "Planen" the page goes to /tiktokstudio/content; click the sidebar "Hochladen" (find → ref) instead of navigate → no need to re-paste tt_helpers.js. One browser_batch per video: click Hochladen, ttInject+ttCaption, 7 hashtag types, ttSched, ttPlan, ttWaitOk; then a separate ttPlan call.
+- YouTube upload also fits in one browser_batch: ytUp(...) → type "HH:MM" → Return → ytFinish(...).
+- TikTok date picker for next month: ttSched only clicks days of the shown month. For e.g. 01.12: click `document.querySelectorAll('.calendar-wrapper .arrow')[1]` (next month) before clicking `span.day.valid`.
+- If the TikTok check hangs on "Überprüfung läuft" after two Planen attempts: navigate (force) to /tiktokstudio/upload, re-paste helpers, re-inject the same Cloudinary URL → passes in seconds.
+- tools/pub.sh now uses `git pull --rebase --autostash` (failed before when other files were modified, and silently skipped the push).
+- queue/yt_pending.json holds title/desc/slot for YouTube uploads postponed by the daily limit (used by the follow-up task).
+- Direct queue: ep36–39 were never posted (their slots 20./21.11 passed) → re-slotted to 26.11/27.11 16:45 + 20:00.

@@ -43,17 +43,30 @@
 | 2026-11-23 | 43 | $1 per heartbeat – lifetime earnings (money) | UOaAX9jh7Dw (public 20:00) | public 20:00 (tt43, 25 s) |
 | 2026-11-24 | 44 | $1 million per briefcase – how many for $1 trillion (money) | GDa75ecn9O4 (public 16:45) | public 16:45 (tt44, 25 s) |
 | 2026-11-24 | 45 | New seating order every night – 10 people (big numbers) | 1mXxOF-p-0U (public 20:00) | public 20:00 (tt45, 25 s) |
-| 2026-11-25 | 48 | Crack a password at 1 guess/second (big numbers) | ytid48 (sched. 25.11 12:00) | sched. 25.11 12:00 (tt48, 25 s) |
-| 2026-11-25 | 49 | Counting $1M/$1B/$1T at $1 per second (money) | ytid49 (sched. 25.11 19:00) | sched. 25.11 19:00 (tt49, 25 s) |
-| 2026-11-26 | 50 | Tic-tac-toe / Connect Four / Sudoku counts (big numbers) | ytid50 (sched. 26.11 12:00) | sched. 26.11 12:00 (tt50, 25 s) |
-| 2026-11-26 | 51 | $1M now vs $1,000 a day for life (money) | ytid51 (sched. 26.11 19:00) | sched. 26.11 19:00 (tt51, 25 s) |
-| 2026-11-27 | 52 | Googol vs atoms in Earth/universe (big numbers) | ytid52 (sched. 27.11 12:00) | sched. 27.11 12:00 (tt52, 25 s) |
-| 2026-11-27 | 53 | Work hours in a career (test: everyday life) | ytid53 (sched. 27.11 19:00) | sched. 27.11 19:00 (tt53, 25 s) |
-| 2026-11-28 | 54 | $1 per second of sleep (money) | ytid54 (sched. 28.11 12:00) | sched. 28.11 12:00 (tt54, 25 s) |
-| 2026-11-28 | 55 | Royal flush at 1 hand per minute (big numbers/odds) | ytid55 (sched. 28.11 19:00) | sched. 28.11 19:00 (tt55, 25 s) |
+| 2026-11-25 | 48 | Crack a password at 1 guess/second (big numbers) | LlcnqdviaZg (sched. 25.11 12:00) | sched. 25.11 12:00 (tt48, 25 s) |
+| 2026-11-25 | 49 | Counting $1M/$1B/$1T at $1 per second (money) | cz3QSl9ONx4 (sched. 25.11 19:00) | sched. 25.11 19:00 (tt49, 25 s) |
+| 2026-11-26 | 50 | Tic-tac-toe / Connect Four / Sudoku counts (big numbers) | tiBDtOvq1J4 (sched. 26.11 12:00) | sched. 26.11 12:00 (tt50, 25 s) |
+| 2026-11-26 | 51 | $1M now vs $1,000 a day for life (money) | ZEkRRqvQUPo (sched. 26.11 19:00) | sched. 26.11 19:00 (tt51, 25 s) |
+| 2026-11-27 | 52 | Googol vs atoms in Earth/universe (big numbers) | vFxQohs1wTA (sched. 27.11 12:00) | sched. 27.11 12:00 (tt52, 25 s) |
+| 2026-11-27 | 53 | Work hours in a career (test: everyday life) | J0do-wnE67A (sched. 27.11 19:00) | sched. 27.11 19:00 (tt53, 25 s) |
+| 2026-11-28 | 54 | $1 per second of sleep (money) | i9T19gtdKgg (sched. 28.11 12:00) | sched. 28.11 12:00 (tt54, 25 s) |
+| 2026-11-28 | 55 | Royal flush at 1 hand per minute (big numbers/odds) | wgWNualbEzU (sched. 28.11 19:00) | sched. 28.11 19:00 (tt55, 25 s) |
+| 2026-11-29 | 56 | T. rex closer to us than to Stegosaurus (test: history) | PENDING – upload in follow-up run 25.11 night (daily limit), sched. 29.11 12:00 | sched. 29.11 12:00 (tt56, 25 s) |
+| 2026-11-29 | 57 | $5 coffee every day for life (money) | PENDING – upload in follow-up run 25.11 night (daily limit), sched. 29.11 19:00 | sched. 29.11 19:00 (tt57, 25 s) |
+| 2026-11-30 | 58 | 6 LEGO bricks: 915M combinations (big numbers) | PENDING – upload in follow-up run 25.11 night (daily limit), sched. 30.11 12:00 | sched. 30.11 12:00 (tt58, 25 s) |
+| 2026-11-30 | 59 | Light travel time Moon/Sun/Proxima (test: space) | PENDING – upload in follow-up run 25.11 night (daily limit), sched. 30.11 19:00 | sched. 30.11 19:00 (tt59, 25 s) |
+| 2026-12-01 | 60 | 1 cent / $1 / $100 from everyone on Earth (money) | PENDING – upload in follow-up run 25.11 night (daily limit), sched. 01.12 12:00 | sched. 01.12 12:00 (tt60, 25 s) |
+| 2026-12-01 | 61 | Atoms in your body, counting them (big numbers) | PENDING – upload in follow-up run 25.11 night (daily limit), sched. 01.12 19:00 | sched. 01.12 19:00 (tt61, 25 s) |
 
-Next free slot: 2026-11-29 12:00 (then 2/day: 12:00 + 19:00).
+Next free slot: 2026-12-02 12:00 (then 2/day: 12:00 + 19:00). YouTube: ep56–ep61 still to upload (follow-up task 25.11 ~22:30).
 
+
+## Weekly review (2026-11-24)
+- YouTube 28 d: 6,818 views, 23.3 h watch time, +5 subs (5 total); 1,129 views in last 48 h. Shorts: 29.9 % viewed vs 70.1 % swiped; 91 % of views from the Shorts feed.
+- YouTube this week: combinatorics/"how many possible" topics win big – Rubik's Cube 632, chess games 375, briefcase 140; most money comparisons only 9–54 views ($100k salary 54, $1 per heartbeat 16, $1T at $1M/day 9); body/time tests 6–41.
+- TikTok EN: views dropped from ~2,300 per post (14.–17.11) to a flat ~650–760 per post since 18.11 for every topic (chess 668/11 likes best engagement); comments rare (breaths 5). Cleopatra stayed at 1 view; coin-flip (24.11 19:00) stuck in "Inhalt wird überprüft".
+- TikTok DE: still 0 posts (German voice not approved) – no comparison possible.
+- Plan this week: 6 big-number/combinatorics (password, Sudoku, googol, poker, LEGO, atoms), 5 money (count $1M, $1M vs $1k/day, paid to sleep, coffee, 1 cent from everyone), 3 tests (work hours, T. rex/Stegosaurus, light travel).
 
 ## Weekly review (2026-11-17)
 - YouTube 28 d: 5,621 views (was 2,848), 20.3 h watch time, +5 subs (5 total); last 48 h only 256 views – YouTube reach is slowing. All-time top still 1B seconds 1,337 / $1,000-a-day 1,213 / heart 981.
@@ -79,6 +92,7 @@ Account created by Kurai; runs in Kurai's Chrome (Claude in Chrome). Handle: @ch
 | (17.11 19:00 planned) | de06 | Jahre im Schlaf | on hold (voice) |
 
 (2026-11-17 weekly run: no new German cuts made/uploaded – German voice still not approved by Kurai.)
+(2026-11-24 weekly run: same – no German cuts, voice still not approved.)
 
 Next free slot DE: 2026-11-18 12:00 (then 2/day: 12:00 + 19:00, same as English).
 
