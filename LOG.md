@@ -49,8 +49,9 @@
 | 2026-11-26 | 51 | $1M now vs $1,000 a day for life (money) | ytid51 (sched. 26.11 19:00) | sched. 26.11 19:00 (tt51, 25 s) |
 | 2026-11-27 | 52 | Googol vs atoms in Earth/universe (big numbers) | ytid52 (sched. 27.11 12:00) | sched. 27.11 12:00 (tt52, 25 s) |
 | 2026-11-27 | 53 | Work hours in a career (test: everyday life) | ytid53 (sched. 27.11 19:00) | sched. 27.11 19:00 (tt53, 25 s) |
+| 2026-11-28 | 54 | $1 per second of sleep (money) | ytid54 (sched. 28.11 12:00) | sched. 28.11 12:00 (tt54, 25 s) |
 
-Next free slot: 2026-11-28 12:00 (then 2/day: 12:00 + 19:00).
+Next free slot: 2026-11-28 19:00 (then 2/day: 12:00 + 19:00).
 
 
 ## Weekly review (2026-11-17)
