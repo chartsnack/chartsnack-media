@@ -44,8 +44,9 @@
 | 2026-11-24 | 44 | $1 million per briefcase – how many for $1 trillion (money) | GDa75ecn9O4 (public 16:45) | public 16:45 (tt44, 25 s) |
 | 2026-11-24 | 45 | New seating order every night – 10 people (big numbers) | 1mXxOF-p-0U (public 20:00) | public 20:00 (tt45, 25 s) |
 | 2026-11-25 | 48 | Crack a password at 1 guess/second (big numbers) | ytid48 (sched. 25.11 12:00) | sched. 25.11 12:00 (tt48, 25 s) |
+| 2026-11-25 | 49 | Counting $1M/$1B/$1T at $1 per second (money) | ytid49 (sched. 25.11 19:00) | sched. 25.11 19:00 (tt49, 25 s) |
 
-Next free slot: 2026-11-25 19:00 (then 2/day: 12:00 + 19:00).
+Next free slot: 2026-11-26 12:00 (then 2/day: 12:00 + 19:00).
 
 
 ## Weekly review (2026-11-17)
