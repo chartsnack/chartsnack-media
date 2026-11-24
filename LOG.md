@@ -42,6 +42,7 @@
 | 2026-11-23 | 42 | 4 h/day on your phone – years of your life (time) | e_Sxpkpa-ao (public 16:45) | public 16:45 (tt42, 25 s) |
 | 2026-11-23 | 43 | $1 per heartbeat – lifetime earnings (money) | UOaAX9jh7Dw (public 20:00) | public 20:00 (tt43, 25 s) |
 | 2026-11-24 | 44 | $1 million per briefcase – how many for $1 trillion (money) | GDa75ecn9O4 (public 16:45) | public 16:45 (tt44, 25 s) |
+| 2026-11-24 | 45 | New seating order every night – 10 people (big numbers) | 1mXxOF-p-0U (public 20:00) | public 20:00 (tt45, 25 s) |
 
 Next free slot: 2026-11-25 12:00 (then 2/day: 12:00 + 19:00).
 
