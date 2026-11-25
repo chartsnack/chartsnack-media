@@ -53,14 +53,14 @@
 | 2026-11-27 | 53 | Work hours in a career (test: everyday life) | J0do-wnE67A (sched. 27.11 19:00) | sched. 27.11 19:00 (tt53, 25 s) |
 | 2026-11-28 | 54 | $1 per second of sleep (money) | i9T19gtdKgg (sched. 28.11 12:00) | sched. 28.11 12:00 (tt54, 25 s) |
 | 2026-11-28 | 55 | Royal flush at 1 hand per minute (big numbers/odds) | wgWNualbEzU (sched. 28.11 19:00) | sched. 28.11 19:00 (tt55, 25 s) |
-| 2026-11-29 | 56 | T. rex closer to us than to Stegosaurus (test: history) | PENDING – upload in follow-up run 25.11 night (daily limit), sched. 29.11 12:00 | sched. 29.11 12:00 (tt56, 25 s) |
-| 2026-11-29 | 57 | $5 coffee every day for life (money) | PENDING – upload in follow-up run 25.11 night (daily limit), sched. 29.11 19:00 | sched. 29.11 19:00 (tt57, 25 s) |
-| 2026-11-30 | 58 | 6 LEGO bricks: 915M combinations (big numbers) | PENDING – upload in follow-up run 25.11 night (daily limit), sched. 30.11 12:00 | sched. 30.11 12:00 (tt58, 25 s) |
-| 2026-11-30 | 59 | Light travel time Moon/Sun/Proxima (test: space) | PENDING – upload in follow-up run 25.11 night (daily limit), sched. 30.11 19:00 | sched. 30.11 19:00 (tt59, 25 s) |
-| 2026-12-01 | 60 | 1 cent / $1 / $100 from everyone on Earth (money) | PENDING – upload in follow-up run 25.11 night (daily limit), sched. 01.12 12:00 | sched. 01.12 12:00 (tt60, 25 s) |
-| 2026-12-01 | 61 | Atoms in your body, counting them (big numbers) | PENDING – upload in follow-up run 25.11 night (daily limit), sched. 01.12 19:00 | sched. 01.12 19:00 (tt61, 25 s) |
+| 2026-11-29 | 56 | T. rex closer to us than to Stegosaurus (test: history) | StgYnjSv6d0 (sched. 29.11 12:00, uploaded 25.11) | sched. 29.11 12:00 (tt56, 25 s) |
+| 2026-11-29 | 57 | $5 coffee every day for life (money) | _-H4b0-OxGE (sched. 29.11 19:00, uploaded 25.11) | sched. 29.11 19:00 (tt57, 25 s) |
+| 2026-11-30 | 58 | 6 LEGO bricks: 915M combinations (big numbers) | GXptB1Y8zeY (sched. 30.11 12:00, uploaded 25.11) | sched. 30.11 12:00 (tt58, 25 s) |
+| 2026-11-30 | 59 | Light travel time Moon/Sun/Proxima (test: space) | p-XK3-TPIXQ (sched. 30.11 19:00, uploaded 25.11) | sched. 30.11 19:00 (tt59, 25 s) |
+| 2026-12-01 | 60 | 1 cent / $1 / $100 from everyone on Earth (money) | 2X-RbCiUd68 (sched. 01.12 12:00, uploaded 25.11) | sched. 01.12 12:00 (tt60, 25 s) |
+| 2026-12-01 | 61 | Atoms in your body, counting them (big numbers) | BMdAG3QmMw8 (sched. 01.12 19:00, uploaded 25.11) | sched. 01.12 19:00 (tt61, 25 s) |
 
-Next free slot: 2026-12-02 12:00 (then 2/day: 12:00 + 19:00). YouTube: ep56–ep61 still to upload (follow-up task 25.11 ~22:30).
+Next free slot: 2026-12-02 12:00 (then 2/day: 12:00 + 19:00).
 
 
 ## Weekly review (2026-11-24)
