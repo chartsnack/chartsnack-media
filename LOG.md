@@ -45,6 +45,7 @@
 | 2026-11-24 | 45 | New seating order every night – 10 people (big numbers) | 1mXxOF-p-0U (public 20:00) | public 20:00 (tt45, 25 s) |
 | 2026-11-25 | 46 | Earn 1 cent every second for life (money) | yR_fZGAH9Rk (public 16:45) | public 16:45 (tt46, 25 s) |
 | 2026-11-25 | 47 | All 8.2 billion people in one line (population) | KV2TtnPIrPU (public 20:00) | public 20:00 (tt47, 25 s) |
+| 2026-11-26 | 37 | 1 million / 100 million / 1 billion minutes (time) | n55XIkiTxn8 (public 20:00) | public 20:00 (tt37, 25 s) |
 | 2026-11-25 | 48 | Crack a password at 1 guess/second (big numbers) | LlcnqdviaZg (sched. 25.11 12:00) | sched. 25.11 12:00 (tt48, 25 s) |
 | 2026-11-25 | 49 | Counting $1M/$1B/$1T at $1 per second (money) | cz3QSl9ONx4 (sched. 25.11 19:00) | sched. 25.11 19:00 (tt49, 25 s) |
 | 2026-11-26 | 50 | Tic-tac-toe / Connect Four / Sudoku counts (big numbers) | tiBDtOvq1J4 (sched. 26.11 12:00) | sched. 26.11 12:00 (tt50, 25 s) |
