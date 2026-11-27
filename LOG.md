@@ -53,6 +53,7 @@
 | 2026-11-27 | 52 | Googol vs atoms in Earth/universe (big numbers) | vFxQohs1wTA (sched. 27.11 12:00) | sched. 27.11 12:00 (tt52, 25 s) |
 | 2026-11-27 | 53 | Work hours in a career (test: everyday life) | J0do-wnE67A (sched. 27.11 19:00) | sched. 27.11 19:00 (tt53, 25 s) |
 | 2026-11-27 | 38 | Buy every Powerball ticket (money) | uL7PDMQinjs (public 16:45) | public 16:45 (tt38, 25 s) |
+| 2026-11-27 | 39 | Earth's history in one year (history/science) | ZRByRINJcs8 (public 20:00) | public 20:00 (tt39, 25 s) |
 | 2026-11-28 | 54 | $1 per second of sleep (money) | i9T19gtdKgg (sched. 28.11 12:00) | sched. 28.11 12:00 (tt54, 25 s) |
 | 2026-11-28 | 55 | Royal flush at 1 hand per minute (big numbers/odds) | wgWNualbEzU (sched. 28.11 19:00) | sched. 28.11 19:00 (tt55, 25 s) |
 | 2026-11-29 | 56 | T. rex closer to us than to Stegosaurus (test: history) | StgYnjSv6d0 (sched. 29.11 12:00, uploaded 25.11) | sched. 29.11 12:00 (tt56, 25 s) |
